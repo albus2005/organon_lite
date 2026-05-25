@@ -67,31 +67,7 @@ BASE_DIR = os.path.dirname(PYTHON_DIR)
 PATHS = {
     "data":       os.path.join(PYTHON_DIR, "data", ""),
     "graphiques": os.path.join(BASE_DIR, "graphiques", ""),
+    "rapports":   os.path.join(BASE_DIR, "rapports", ""),
 }
-
-print("DATA :", PATHS["data"])
-print("GRAPH:", PATHS["graphiques"])
-
 # Signature
 ORGANON_SIGNATURE = "Organon Data Solutions"
-
-# =============================
-# 6. EXPORTER EN PNG
-# =============================
-
-def exporter_png(fig, nom_fichier):
-    """
-    Exporte la figure en PNG dans graphiques/
-    Usage : exporter_png(fig, "graph1a.png")
-    """
-    dossier = os.path.join(BASE_DIR, "graphiques")
-    os.makedirs(dossier, exist_ok=True)
-    chemin = os.path.join(dossier, nom_fichier)
-    fig.write_image(
-        chemin,
-        width=1000,
-        height=600,
-        scale=2,
-    )
-    print(f"✓ PNG exporté : {chemin}")
-
