@@ -153,3 +153,22 @@ def resume(df):
     print(f"\nValeurs manquantes :\n{df.isnull().sum()}")
     print(f"\nStatistiques :\n{df.describe()}")
     print("==========================\n")
+    
+    # =============================
+# 6. EXPORTER EN PNG
+# =============================
+
+def exporter_png(fig, nom_fichier):
+    """
+    Exporte la figure en PNG dans graphiques/
+    Usage : exporter_png(fig, "graph1a.png")
+    """
+    os.makedirs(PATHS["graphiques"], exist_ok=True)
+    chemin = os.path.join(PATHS["graphiques"], nom_fichier)
+    fig.write_image(
+        chemin,
+        width=1000,
+        height=600,
+        scale=2,
+    )
+    print(f"✓ PNG exporté : {chemin}")
