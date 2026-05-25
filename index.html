@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organon Data Solutions</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="40" height="40">
+        <line x1="100" y1="10" x2="100" y2="180" stroke="#374151" stroke-width="4" stroke-linecap="round" stroke-dasharray="170" stroke-dashoffset="170">
+          <animate attributeName="stroke-dashoffset" from="170" to="0" dur="0.8s" begin="0s" fill="freeze"/>
+        </line>
+        <circle cx="100" cy="120" r="45" fill="none" stroke="#374151" stroke-width="4" stroke-dasharray="283" stroke-dashoffset="283">
+          <animate attributeName="stroke-dashoffset" from="283" to="0" dur="0.8s" begin="0.8s" fill="freeze"/>
+        </circle>
+        <polygon points="100,10 190,180 10,180" fill="none" stroke="#374151" stroke-width="4" stroke-linejoin="round" stroke-dasharray="565" stroke-dashoffset="565">
+          <animate attributeName="stroke-dashoffset" from="565" to="0" dur="1.2s" begin="1.6s" fill="freeze"/>
+        </polygon>
+      </svg>
+      <span class="nav-title">ORGANON</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Les bonnes données.<br/>Les meilleures décisions.</h1>
+      <p class="hero-sub">Analyse statistique et visualisation de données pour vos mémoires et TFC — Bukavu</p>
+      <a href="#projets" class="btn-primary">Voir mes projets</a>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="section" id="apropos">
+    <h2 class="section-title">À propos</h2>
+    <div class="apropos-content">
+      <p>
+        Organon Data Solutions est un cabinet junior d'analyse de données basé à Bukavu, 
+        spécialisé dans le traitement statistique des données pour les travaux académiques 
+        en sciences de la santé.
+      </p>
+      <p>
+        Nous transformons vos données brutes en résultats clairs, 
+        exploitables et défendables devant un jury.
+      </p>
+      <div class="valeurs">
+        <div class="valeur-card">
+          <span class="valeur-icon">◎</span>
+          <h3>Rigueur</h3>
+          <p>Chaque analyse est vérifiée et documentée.</p>
+        </div>
+        <div class="valeur-card">
+          <span class="valeur-icon">△</span>
+          <h3>Clarté</h3>
+          <p>Des résultats que vous comprenez et défendez.</p>
+        </div>
+        <div class="valeur-card">
+          <span class="valeur-icon">|</span>
+          <h3>Précision</h3>
+          <p>Les bons outils pour les bonnes conclusions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="section section-alt" id="projets">
+    <h2 class="section-title">Projets</h2>
+    <div class="projets-grid">
+
+      <div class="projet-card">
+        <div class="projet-tag">Épidémiologie</div>
+        <h3>Analyse de prévalence</h3>
+        <p>Distribution et fréquence d'une pathologie dans une population cible.</p>
+        <a href="projet1.html" class="btn-secondary">Voir le projet</a>
+      </div>
+
+      <div class="projet-card">
+        <div class="projet-tag">Statistiques</div>
+        <h3>Étude cas-témoins</h3>
+        <p>Test du chi², odds ratio et interprétation des associations.</p>
+        <a href="projet2.html" class="btn-secondary">Voir le projet</a>
+      </div>
+
+      <div class="projet-card">
+        <div class="projet-tag">Enquête</div>
+        <h3>Satisfaction patients</h3>
+        <p>Analyse et visualisation d'une enquête de satisfaction hospitalière.</p>
+        <a href="projet3.html" class="btn-secondary">Voir le projet</a>
+      </div>
+
+      <div class="projet-card">
+        <div class="projet-tag">Nettoyage</div>
+        <h3>Nettoyage de données</h3>
+        <p>Transformation de données brutes en dataset propre et analysable.</p>
+        <a href="projet4.html" class="btn-secondary">Voir le projet</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section class="section" id="tarifs">
+    <h2 class="section-title">Tarifs</h2>
+    <div class="tarifs-grid">
+
+      <div class="tarif-card">
+        <h3>Essentiel</h3>
+        <div class="tarif-prix">$15</div>
+        <ul>
+          <li>Nettoyage de données</li>
+          <li>3 graphiques</li>
+          <li>Livraison 48h</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Commencer</a>
+      </div>
+
+      <div class="tarif-card tarif-featured">
+        <div class="tarif-badge">Populaire</div>
+        <h3>Complet</h3>
+        <div class="tarif-prix">$35</div>
+        <ul>
+          <li>Nettoyage complet</li>
+          <li>Analyse statistique</li>
+          <li>Graphiques interactifs</li>
+          <li>Interprétation rédigée</li>
+          <li>Livraison 72h</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Commencer</a>
+      </div>
+
+      <div class="tarif-card">
+        <h3>Mémoire</h3>
+        <div class="tarif-prix">$60</div>
+        <ul>
+          <li>Tout le pack Complet</li>
+          <li>Chapitre résultats rédigé</li>
+          <li>Révisions incluses</li>
+          <li>Support soutenance</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Commencer</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-content">
+      <p>Vous avez un projet ? Écrivez-nous directement.</p>
+      <div class="contact-links">
+        <a href="mailto:organon@email.com" class="btn-primary">Email</a>
+        <a href="https://wa.me/243000000000" class="btn-secondary">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Organon Data Solutions — Bukavu, RDC</p>
+    <p class="footer-sub">L'outil qui transforme vos données en décisions.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <line x1="100" y1="10" x2="100" y2="180" stroke="#1E3A5F" stroke-width="4" stroke-linecap="round" stroke-dasharray="170" stroke-dashoffset="170">
+    <animate attributeName="stroke-dashoffset" from="170" to="0" dur="0.8s" begin="0s" fill="freeze"/>
+  </line>
+  <circle cx="100" cy="120" r="45" fill="none" stroke="#1E3A5F" stroke-width="4" stroke-dasharray="283" stroke-dashoffset="283">
+    <animate attributeName="stroke-dashoffset" from="283" to="0" dur="0.8s" begin="0.8s" fill="freeze"/>
+  </circle>
+  <polygon points="100,10 190,180 10,180" fill="none" stroke="#1E3A5F" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="1.1" stroke-dasharray="565" stroke-dashoffset="565">
+    <animate attributeName="stroke-dashoffset" from="565" to="0" dur="1.2s" begin="1.6s" fill="freeze"/>
+  </polygon>
+</svg>

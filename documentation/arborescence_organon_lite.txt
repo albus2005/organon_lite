@@ -1,0 +1,43 @@
+organon-lite/
+│
+├── index.html
+├── projet1.html
+├── projet2.html
+├── projet3.html
+├── projet4.html
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│       └── logo.svg
+│
+├── graphiques/
+│   ├── graph1.html
+│   ├── graph2.html
+│   ├── graph3.html
+│   └── graph4.html
+│
+└── python/
+    ├── projet1.py
+    ├── projet2.py
+    ├── projet3.py
+    └── projet4.py
+    
+    
+    python/
+│
+├── config.py        ← couleurs, polices, style global
+├── utils.py         ← fonctions réutilisables
+├── data/
+│   ├── projet1.csv
+│   ├── projet2.csv
+│   ├── projet3.csv
+│   └── projet4.csv
+│
+├── projet1.py       ← importe config + utils
+├── projet2.py       ← importe config + utils
+├── projet3.py       ← importe config + utils
+└── projet4.py       ← importe config + utils

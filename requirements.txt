@@ -1,0 +1,8 @@
+pandas
+plotly
+kaleido
+fpdf2
+seaborn
+matplotlib
+numpy
+scipy

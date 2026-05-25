@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet 1 — Paludisme | Organon</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/projet.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="40" height="40">
+        <line x1="100" y1="10" x2="100" y2="180" stroke="#374151" stroke-width="4" stroke-linecap="round" stroke-dasharray="170" stroke-dashoffset="170">
+          <animate attributeName="stroke-dashoffset" from="170" to="0" dur="0.8s" begin="0s" fill="freeze"/>
+        </line>
+        <circle cx="100" cy="120" r="45" fill="none" stroke="#374151" stroke-width="4" stroke-dasharray="283" stroke-dashoffset="283">
+          <animate attributeName="stroke-dashoffset" from="283" to="0" dur="0.8s" begin="0.8s" fill="freeze"/>
+        </circle>
+        <polygon points="100,10 190,180 10,180" fill="none" stroke="#374151" stroke-width="4" stroke-linejoin="round" stroke-dasharray="565" stroke-dashoffset="565">
+          <animate attributeName="stroke-dashoffset" from="565" to="0" dur="1.2s" begin="1.6s" fill="freeze"/>
+        </polygon>
+      </svg>
+      <span class="nav-title">ORGANON</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#projets">← Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- EN-TÊTE PROJET -->
+  <section class="projet-hero">
+    <div class="projet-hero-content">
+      <div class="projet-tag">Épidémiologie</div>
+      <h1>Prévalence du paludisme chez les enfants de moins de 5 ans à Bukavu</h1>
+      <p class="projet-meta">30 patients · 3 quartiers · Bukavu, RDC · 2026</p>
+      <p class="projet-desc">
+        Analyse de la distribution du paludisme dans trois quartiers de Bukavu —
+        Bagira, Kadutu et Ibanda — chez des enfants de 6 à 59 mois.
+        Variables étudiées : résultat TDR, taux d'hémoglobine, sexe et hospitalisation.
+      </p>
+    </div>
+  </section>
+
+  <!-- CHIFFRES CLÉS -->
+  <section class="section">
+    <h2 class="section-title">Chiffres clés</h2>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-valeur">30</div>
+        <div class="kpi-label">Patients examinés</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">63%</div>
+        <div class="kpi-label">Prévalence du paludisme</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">7.8</div>
+        <div class="kpi-label">Hémoglobine moyenne (cas positifs)</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">Bagira</div>
+        <div class="kpi-label">Quartier le plus touché</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIQUES -->
+  <section class="section section-alt">
+    <h2 class="section-title">Visualisations</h2>
+    <div class="graphiques-grid">
+
+      <div class="graphique-bloc">
+        <h3>Prévalence globale</h3>
+        <p>Répartition des cas positifs et négatifs au TDR.</p>
+        <iframe src="graphiques/graph1a.html" width="100%" height="420" frameborder="0"></iframe>
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Distribution par quartier</h3>
+        <p>Comparaison des cas par quartier de résidence.</p>
+        <iframe src="graphiques/graph1b.html" width="100%" height="420" frameborder="0"></iframe>
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Taux d'hémoglobine</h3>
+        <p>Comparaison du taux d'hémoglobine selon le statut palustre.</p>
+        <iframe src="graphiques/graph1c.html" width="100%" height="420" frameborder="0"></iframe>
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Répartition par sexe</h3>
+        <p>Distribution des cas positifs selon le sexe de l'enfant.</p>
+        <iframe src="graphiques/graph1d.html" width="100%" height="420" frameborder="0"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERPRÉTATION -->
+  <section class="section">
+    <h2 class="section-title">Interprétation</h2>
+    <div class="interpretation">
+      <div class="interpretation-bloc">
+        <h3>Prévalence élevée</h3>
+        <p>
+          Une prévalence de 63% indique une charge palustre importante
+          dans la population étudiée, cohérente avec les données
+          épidémiologiques de la région des Grands Lacs.
+        </p>
+      </div>
+      <div class="interpretation-bloc">
+        <h3>Impact sur l'hémoglobine</h3>
+        <p>
+          Les enfants positifs au TDR présentent un taux d'hémoglobine
+          significativement plus bas, suggérant une anémie palustre
+          fréquente dans ce groupe d'âge.
+        </p>
+      </div>
+      <div class="interpretation-bloc">
+        <h3>Disparité géographique</h3>
+        <p>
+          Le quartier de Bagira concentre le plus grand nombre de cas,
+          ce qui pourrait refléter des conditions environnementales
+          favorables à la prolifération du vecteur.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Organon Data Solutions — Bukavu, RDC</p>
+    <p class="footer-sub">L'outil qui transforme vos données en décisions.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
