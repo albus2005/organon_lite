@@ -3,26 +3,29 @@
 # projets/projet1/analyse.py
 # Paludisme — Enfants < 5 ans — Bukavu
 # =============================
-
 import os
 import sys
 
-# Accès au core
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+# Racine du projet
+PROJET_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR   = os.path.dirname(os.path.dirname(PROJET_DIR))
+PYTHON_DIR = os.path.join(BASE_DIR, "python")
 
-from core.nettoyage    import pipeline_nettoyage
-from core.stats        import analyser
+# Accès au core
+sys.path.insert(0, PYTHON_DIR)
+
+from core.nettoyage     import pipeline_nettoyage
+from core.stats         import analyser
 from core.visualisation import visualiser
-from core.rendu        import pipeline_rendu
+from core.rendu         import pipeline_rendu
 
 # =============================
 # CHEMINS
 # =============================
 
-PROJET_DIR   = os.path.dirname(os.path.abspath(__file__))
-DATA         = os.path.join(PROJET_DIR, "data", "projet1.csv")
-GRAPHIQUES   = os.path.join(PROJET_DIR, "graphiques")
-RAPPORTS     = os.path.join(PROJET_DIR, "rapports")
+DATA       = os.path.join(PYTHON_DIR, "data", "projet1.csv")
+GRAPHIQUES = os.path.join(PROJET_DIR, "graphiques")
+RAPPORTS   = os.path.join(PROJET_DIR, "rapports")
 
 # =============================
 # MÉTADONNÉES DU PROJET
