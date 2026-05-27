@@ -41,3 +41,40 @@ organon-lite/
 ├── projet2.py       ← importe config + utils
 ├── projet3.py       ← importe config + utils
 └── projet4.py       ← importe config + utils
+
+
+
+ARCHITECTURE MIS A JOUR 
+
+organon_lite/
+│
+├── index.html
+├── projet1.html
+├── projet2.html
+├── projet3.html
+├── projet4.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── projet.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│
+├── graphiques/
+│
+├── rapports/
+│
+└── python/
+    ├── config.py
+    ├── core/
+    │   ├── stats.py
+    │   ├── nettoyage.py
+    │   ├── visualisation.py
+    │   └── rendu.py
+    ├── projets/
+    │   └── projet1/
+    │       ├── data/
+    │       └── analyse.py
+    └── utils.py

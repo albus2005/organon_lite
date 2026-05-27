@@ -3,7 +3,30 @@
 # Configuration globale
 # =============================
 
-# Couleurs de la charte graphique
+import os
+
+# =============================
+# CHEMINS
+# =============================
+
+# Dossier python/
+PYTHON_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Racine du projet
+BASE_DIR = os.path.dirname(PYTHON_DIR)
+
+PATHS = {
+    "python":      PYTHON_DIR,
+    "base":        BASE_DIR,
+    "graphiques":  os.path.join(BASE_DIR, "graphiques"),
+    "rapports":    os.path.join(BASE_DIR, "rapports"),
+    "projets":     os.path.join(PYTHON_DIR, "projets"),
+}
+
+# =============================
+# COULEURS
+# =============================
+
 COLORS = {
     "primary":    "#CD7F32",  # Bronze
     "secondary":  "#FFD700",  # Or
@@ -14,7 +37,6 @@ COLORS = {
     "text":       "#374151",
 }
 
-# Palette séquentielle pour graphiques multi-séries
 PALETTE = [
     "#CD7F32",
     "#FFD700",
@@ -24,15 +46,21 @@ PALETTE = [
     "#C0C0C0",
 ]
 
-# Typographie
+# =============================
+# TYPOGRAPHIE
+# =============================
+
 FONTS = {
-    "family": "Georgia, serif",
+    "family":     "Georgia, serif",
     "title_size": 20,
-    "axis_size": 13,
+    "axis_size":  13,
     "label_size": 11,
 }
 
-# Style global Plotly
+# =============================
+# STYLE PLOTLY GLOBAL
+# =============================
+
 LAYOUT = {
     "font": {
         "family": FONTS["family"],
@@ -47,27 +75,24 @@ LAYOUT = {
             "color":  COLORS["dark"],
             "family": FONTS["family"],
         },
-        "x": 0.5,
+        "x":       0.5,
         "xanchor": "center",
     },
     "colorway": PALETTE,
     "margin": {"t": 80, "b": 60, "l": 60, "r": 40},
 }
 
-# Dossiers
-# Dossiers
-import os
+# =============================
+# SIGNATURE
+# =============================
 
-# Dossier python/
-PYTHON_DIR = os.path.dirname(os.path.abspath(__file__))
+ORGANON_SIGNATURE = "Organon Data Solutions — Bukavu"
 
-# Racine du projet organon_lite/
-BASE_DIR = os.path.dirname(PYTHON_DIR)
+# =============================
+# CONFIRMATION
+# =============================
 
-PATHS = {
-    "data":       os.path.join(PYTHON_DIR, "data", ""),
-    "graphiques": os.path.join(BASE_DIR, "graphiques", ""),
-    "rapports":   os.path.join(BASE_DIR, "rapports", ""),
-}
-# Signature
-ORGANON_SIGNATURE = "Organon Data Solutions"
+print("╔══════════════════════════════════════╗")
+print("║     ORGANON DATA SOLUTIONS           ║")
+print("║     Configuration chargée ✓          ║")
+print("╚══════════════════════════════════════╝")
