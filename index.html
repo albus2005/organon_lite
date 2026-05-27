@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Organon Data Solutions</title>
+  <title>Organon Data Solutions — Bukavu</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -30,43 +30,107 @@
       <li><a href="#tarifs">Tarifs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div class="burger">&#9776;</div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Les bonnes données.<br/>Des resultats rapides.</h1>
-      <p class="hero-sub">Nettoyage, Analyse statistique et Visualisation de données pour vos mémoires et TFC — Bukavu</p>
-      <a href="#projets" class="btn-primary">Voir mes projets</a>
+      <p class="hero-tag">Bukavu — RDC</p>
+      <h1>Vos données.<br/>Notre expertise.<br/>Votre succès.</h1>
+      <p class="hero-sub">
+        Collecte, nettoyage, analyse de données et production de rapports 
+        professionnels — pour que vous vous concentriez sur l'essentiel.
+      </p>
+      <div class="hero-btns">
+        <a href="#projets" class="btn-primary">Voir nos projets</a>
+        <a href="#tarifs" class="btn-secondary">Nos tarifs</a>
+      </div>
     </div>
   </section>
 
   <!-- À PROPOS -->
   <section class="section" id="apropos">
     <h2 class="section-title">À propos</h2>
-    <div class="apropos-content">
-      <p>
-        Organon Data Solutions est un cabinet junior d'analyse de données basé à Bukavu, spécialisé dans le traitement statistique des données pour les travaux académiques en sciences de la santé.
-      </p>
-      <p>
-        Nous transformons vos données brutes en résultats clairs, exploitables et défendables devant un jury
-      </p>
-      <div class="valeurs">
-        <div class="valeur-card">
-          <span class="valeur-icon">◎</span>
-          <h3>Rigueur</h3>
-          <p>Chaque analyse est vérifiée et documentée.</p>
+    <div class="apropos-wrapper">
+
+      <div class="apropos-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="120" height="120">
+          <line x1="100" y1="10" x2="100" y2="180" stroke="#374151" stroke-width="4" stroke-linecap="round" stroke-dasharray="170" stroke-dashoffset="170">
+            <animate attributeName="stroke-dashoffset" from="170" to="0" dur="0.8s" begin="0.3s" fill="freeze"/>
+          </line>
+          <circle cx="100" cy="120" r="45" fill="none" stroke="#374151" stroke-width="4" stroke-dasharray="283" stroke-dashoffset="283">
+            <animate attributeName="stroke-dashoffset" from="283" to="0" dur="0.8s" begin="1.1s" fill="freeze"/>
+          </circle>
+          <polygon points="100,10 190,180 10,180" fill="none" stroke="#374151" stroke-width="4" stroke-linejoin="round" stroke-dasharray="565" stroke-dashoffset="565">
+            <animate attributeName="stroke-dashoffset" from="565" to="0" dur="1.2s" begin="1.9s" fill="freeze"/>
+          </polygon>
+        </svg>
+      </div>
+
+      <div class="apropos-content">
+        <p class="apropos-name">MUGALIHYA NTONDO Joël</p>
+        <p class="apropos-role">Fondateur — Organon Data Solutions</p>
+
+        <p class="apropos-texte">
+          Les années de fin de cycle sont parmi les plus exigeantes du parcours 
+          académique. Entre les cours, les examens, les stages et l'écriture du 
+          mémoire, le temps manque — et l'analyse de données devient un obstacle 
+          de plus à surmonter.
+        </p>
+        <p class="apropos-texte">
+          Organon est né de ce constat. Nous prenons en charge cette tâche 
+          chronophage pour vous permettre de vous concentrer sur ce qui compte : 
+          comprendre, défendre et réussir.
+        </p>
+        <p class="apropos-texte">
+          Données désordonnées, incomplètes, trop nombreuses ou inexistantes — 
+          nous les transformons en résultats clairs, exploitables et défendables 
+          devant un jury. Avec un accompagnement jusqu'à la soutenance.
+        </p>
+
+        <div class="apropos-competences">
+          <span class="competence-tag">Python</span>
+          <span class="competence-tag">Pandas & NumPy</span>
+          <span class="competence-tag">Excel</span>
+          <span class="competence-tag">KoboCollect</span>
+          <span class="competence-tag">SQLite</span>
+          <span class="competence-tag">Prompt Engineering</span>
         </div>
-        <div class="valeur-card">
-          <span class="valeur-icon">△</span>
-          <h3>Clarté</h3>
-          <p>Des résultats que vous comprenez et défendez.</p>
-        </div>
-        <div class="valeur-card">
-          <span class="valeur-icon">|</span>
-          <h3>Précision</h3>
-          <p>Les bons outils pour les bonnes conclusions.</p>
-        </div>
+
+        <a href="#contact" class="btn-primary apropos-cta">Travaillons ensemble</a>
+      </div>
+
+    </div>
+
+    <!-- VALEURS -->
+    <div class="valeurs">
+      <div class="valeur-card">
+        <span class="valeur-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="32" height="32">
+            <circle cx="100" cy="120" r="45" fill="none" stroke="#CD7F32" stroke-width="4"/>
+          </svg>
+        </span>
+        <h3>Rigueur</h3>
+        <p>Chaque analyse est vérifiée, documentée et reproductible.</p>
+      </div>
+      <div class="valeur-card">
+        <span class="valeur-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="32" height="32">
+            <polygon points="100,10 190,180 10,180" fill="none" stroke="#CD7F32" stroke-width="4"/>
+          </svg>
+        </span>
+        <h3>Clarté</h3>
+        <p>Des résultats que vous comprenez et défendez avec confiance.</p>
+      </div>
+      <div class="valeur-card">
+        <span class="valeur-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="32" height="32">
+            <line x1="100" y1="10" x2="100" y2="180" stroke="#CD7F32" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <h3>Précision</h3>
+        <p>Les bons outils pour les bonnes conclusions.</p>
       </div>
     </div>
   </section>
@@ -74,34 +138,36 @@
   <!-- PROJETS -->
   <section class="section section-alt" id="projets">
     <h2 class="section-title">Projets</h2>
+    <p class="section-sub">
+      Chaque projet est une démonstration concrète de ce que nous pouvons 
+      faire pour votre travail.
+    </p>
     <div class="projets-grid">
 
       <div class="projet-card">
         <div class="projet-tag">Épidémiologie</div>
-        <h3>Analyse de prévalence</h3>
-        <p>Distribution et fréquence d'une pathologie dans une population cible.</p>
-        <a href="projet1.html" class="btn-secondary">Voir le projet</a>
+        <h3>Prévalence du paludisme</h3>
+        <p>
+          Analyse de la distribution du paludisme chez les enfants 
+          de moins de 5 ans dans trois quartiers de Bukavu.
+        </p>
+        <div class="projet-footer">
+          <span class="projet-meta">30 patients · Bukavu</span>
+          <a href="projet1.html" class="btn-secondary">Voir le projet</a>
+        </div>
       </div>
 
       <div class="projet-card">
-        <div class="projet-tag">Statistiques</div>
-        <h3>Étude cas-témoins</h3>
-        <p>Test du chi², odds ratio et interprétation des associations.</p>
-        <a href="projet2.html" class="btn-secondary">Voir le projet</a>
-      </div>
-
-      <div class="projet-card">
-        <div class="projet-tag">Enquête</div>
-        <h3>Satisfaction patients</h3>
-        <p>Analyse et visualisation d'une enquête de satisfaction hospitalière.</p>
-        <a href="projet3.html" class="btn-secondary">Voir le projet</a>
-      </div>
-
-      <div class="projet-card">
-        <div class="projet-tag">Nettoyage</div>
-        <h3>Nettoyage de données</h3>
-        <p>Transformation de données brutes en dataset propre et analysable.</p>
-        <a href="projet4.html" class="btn-secondary">Voir le projet</a>
+        <div class="projet-tag">Ophtalmologie</div>
+        <h3>Décollement de la rétine</h3>
+        <p>
+          Aspects épidémiologiques, étiologiques, cliniques et thérapeutiques 
+          du décollement de la rétine à la clinique CELPA Bukavu.
+        </p>
+        <div class="projet-footer">
+          <span class="projet-meta">49 patients · 2018–2024</span>
+          <a href="projet2.html" class="btn-secondary">Voir le projet</a>
+        </div>
       </div>
 
     </div>
@@ -110,62 +176,129 @@
   <!-- TARIFS -->
   <section class="section" id="tarifs">
     <h2 class="section-title">Tarifs</h2>
+    <p class="section-sub">
+      Des prix adaptés à la réalité estudiantine de Bukavu.
+    </p>
     <div class="tarifs-grid">
 
       <div class="tarif-card">
-        <h3>Essentiel</h3>
-        <div class="tarif-prix">$15</div>
+        <h3>Analyse</h3>
+        <div class="tarif-prix">12 500 <span>CDF</span></div>
+        <div class="tarif-delai">⏱ Livraison 24h</div>
         <ul>
-          <li>Nettoyage de données</li>
-          <li>3 graphiques</li>
-          <li>Livraison 48h</li>
+          <li>Nettoyage des données</li>
+          <li>Analyse statistique complète</li>
+          <li>Rapport console détaillé</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Commencer</a>
+      </div>
+
+      <div class="tarif-card">
+        <h3>Analyse + Graphiques</h3>
+        <div class="tarif-prix">25 000 <span>CDF</span></div>
+        <div class="tarif-delai">⏱ Livraison 48h</div>
+        <ul>
+          <li>Tout le pack Analyse</li>
+          <li>Graphiques professionnels</li>
+          <li>Visualisations adaptées</li>
         </ul>
         <a href="#contact" class="btn-primary">Commencer</a>
       </div>
 
       <div class="tarif-card tarif-featured">
-        <div class="tarif-badge">Populaire</div>
-        <h3>Complet</h3>
-        <div class="tarif-prix">$35</div>
+        <div class="tarif-badge">Recommandé</div>
+        <h3>Rapport Complet</h3>
+        <div class="tarif-prix">37 500 <span>CDF</span></div>
+        <div class="tarif-delai">⏱ Livraison 72h</div>
         <ul>
-          <li>Nettoyage complet</li>
-          <li>Analyse statistique</li>
-          <li>Graphiques interactifs</li>
-          <li>Interprétation rédigée</li>
-          <li>Livraison 72h</li>
+          <li>Tout le pack Graphiques</li>
+          <li>Rapport PDF professionnel</li>
+          <li>Export Excel structuré</li>
+          <li>Rapport Word éditable</li>
         </ul>
         <a href="#contact" class="btn-primary">Commencer</a>
       </div>
 
       <div class="tarif-card">
-        <h3>Mémoire</h3>
-        <div class="tarif-prix">$60</div>
+        <h3>Accompagnement</h3>
+        <div class="tarif-prix">125 000 <span>CDF</span></div>
+        <div class="tarif-delai">⏱ Selon le projet</div>
         <ul>
-          <li>Tout le pack Complet</li>
-          <li>Chapitre résultats rédigé</li>
-          <li>Révisions incluses</li>
-          <li>Support soutenance</li>
+          <li>Collecte des données</li>
+          <li>Tout le pack Rapport Complet</li>
+          <li>Accompagnement soutenance</li>
+          <li>Révisions illimitées</li>
         </ul>
         <a href="#contact" class="btn-primary">Commencer</a>
       </div>
 
     </div>
+    <p class="tarif-note">
+      * Les tarifs peuvent être ajustés selon la complexité du projet. 
+      Contactez-nous pour un devis personnalisé.
+    </p>
   </section>
 
   <!-- CONTACT -->
   <section class="section section-alt" id="contact">
     <h2 class="section-title">Contact</h2>
-    <div class="contact-content">
-      <p>Vous avez un projet ? Écrivez-nous directement.</p>
-      <div class="contact-links">
-        <a href="mailto:organon@email.com" class="btn-primary">Email</a>
-        <a href="https://wa.me/243000000000" class="btn-secondary">WhatsApp</a>
-      </div>
+    <p class="section-sub">
+      Vous avez un projet ? Écrivez-nous — nous répondons dans les 24h.
+    </p>
+    <div class="contact-grid">
+
+      <a href="https://wa.me/243852591414" target="_blank" class="contact-card">
+        <div class="contact-icon">
+          <!-- WhatsApp SVG officiel -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+            <radialGradient id="wha" cx="11.99" cy="37.95" r="40.48" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#00e676"/>
+              <stop offset=".3" stop-color="#00e676"/>
+              <stop offset="1" stop-color="#00b0ff"/>
+            </radialGradient>
+            <path fill="url(#wha)" d="M24,4C13,4,4,13,4,24c0,3.9,1.1,7.5,3,10.6L4,44l9.7-3c3,1.7,6.4,2.7,10.3,2.7 c11,0,20-9,20-20S35,4,24,4z"/>
+            <path fill="#fff" d="M35.2,28.6c-0.5-0.2-2.8-1.4-3.2-1.5c-0.4-0.2-0.7-0.2-1,0.2c-0.3,0.5-1.2,1.5-1.4,1.8 c-0.3,0.3-0.5,0.4-1,0.1c-0.5-0.2-2-0.7-3.7-2.3c-1.4-1.2-2.3-2.7-2.6-3.2c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.5,0.7-0.8 c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8c-0.1-0.2-1-2.5-1.4-3.4c-0.4-0.9-0.7-0.8-1-0.8c-0.3,0-0.6,0-0.9,0 c-0.3,0-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4c0,2.3,1.7,4.6,2,4.9c0.2,0.3,3.3,5.2,8.1,7.3c1.1,0.5,2,0.8,2.7,1 c1.1,0.3,2.2,0.3,3,0.2c0.9-0.1,2.8-1.1,3.2-2.3c0.4-1.1,0.4-2.1,0.3-2.3C35.9,29,35.6,28.8,35.2,28.6z"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <h3>WhatsApp</h3>
+          <p>+243 852 591 414</p>
+          <span class="contact-action">Écrire un message →</span>
+        </div>
+      </a>
+
+      <a href="mailto:aristotelu2005@gmail.com" class="contact-card">
+        <div class="contact-icon">
+          <!-- Gmail SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+            <path fill="#EA4335" d="M6,40h6V24L4,18v18C4,37.2,4.9,40,6,40z"/>
+            <path fill="#34A853" d="M36,40h6c1.1,0,2-0.9,2-2V18l-8,6V40z"/>
+            <path fill="#4A90D9" d="M36,10H12L24,19L36,10z"/>
+            <path fill="#FBBC05" d="M4,18l8,6V10L4,18z"/>
+            <path fill="#EA4335" d="M44,18l-8-8v8L44,18z"/>
+            <path fill="#C5221F" d="M12,10l-8,8h8V10z"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <h3>Email</h3>
+          <p>aristotelu2005@gmail.com</p>
+          <span class="contact-action">Envoyer un email →</span>
+        </div>
+      </a>
+
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
+    <div class="footer-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="30" height="30">
+        <line x1="100" y1="10" x2="100" y2="180" stroke="#CD7F32" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="100" cy="120" r="45" fill="none" stroke="#CD7F32" stroke-width="4"/>
+        <polygon points="100,10 190,180 10,180" fill="none" stroke="#CD7F32" stroke-width="4" stroke-linejoin="round"/>
+      </svg>
+      <span>ORGANON</span>
+    </div>
     <p>© 2026 Organon Data Solutions — Bukavu, RDC</p>
     <p class="footer-sub">L'outil qui transforme vos données en décisions.</p>
   </footer>

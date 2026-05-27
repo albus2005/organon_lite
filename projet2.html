@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet 2 — Décollement de la rétine | Organon</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/projet.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="40" height="40">
+        <line x1="100" y1="10" x2="100" y2="180" stroke="#374151" stroke-width="4" stroke-linecap="round" stroke-dasharray="170" stroke-dashoffset="170">
+          <animate attributeName="stroke-dashoffset" from="170" to="0" dur="0.8s" begin="0s" fill="freeze"/>
+        </line>
+        <circle cx="100" cy="120" r="45" fill="none" stroke="#374151" stroke-width="4" stroke-dasharray="283" stroke-dashoffset="283">
+          <animate attributeName="stroke-dashoffset" from="283" to="0" dur="0.8s" begin="0.8s" fill="freeze"/>
+        </circle>
+        <polygon points="100,10 190,180 10,180" fill="none" stroke="#374151" stroke-width="4" stroke-linejoin="round" stroke-dasharray="565" stroke-dashoffset="565">
+          <animate attributeName="stroke-dashoffset" from="565" to="0" dur="1.2s" begin="1.6s" fill="freeze"/>
+        </polygon>
+      </svg>
+      <span class="nav-title">ORGANON</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#projets">← Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="burger">&#9776;</div>
+  </nav>
+
+  <!-- EN-TÊTE PROJET -->
+  <section class="projet-hero">
+    <div class="projet-hero-content">
+      <div class="projet-tag">Ophtalmologie</div>
+      <h1>
+        Aspects épidémiologiques, étiologiques, cliniques et thérapeutiques 
+        du décollement de la rétine à la clinique ophtalmologique CELPA Bukavu
+      </h1>
+      <p class="projet-meta">
+        49 patients · 7 ans · Bukavu, RDC · 2018–2024
+      </p>
+      <p class="projet-desc">
+        Étude rétrospective, descriptive et analytique menée à la clinique 
+        ophtalmologique CELPA de Bukavu sur une période de sept ans. 
+        Analyse des aspects épidémiologiques, étiologiques, cliniques et 
+        thérapeutiques du décollement de la rétine dans un contexte 
+        à ressources limitées.
+      </p>
+      <div class="projet-hero-btns">
+        <a href="projets/projet2/rapports/rapport_projet2_kachunga.pdf" 
+           download class="btn-primary">
+          Télécharger le rapport PDF
+        </a>
+        <a href="projets/projet2/rapports/projet2_kachunga_donnees.xlsx" 
+           download class="btn-secondary">
+          Télécharger les données Excel
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES CLÉS -->
+  <section class="section">
+    <h2 class="section-title">Chiffres clés</h2>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-valeur">49</div>
+        <div class="kpi-label">Patients examinés</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">3,5%</div>
+        <div class="kpi-label">Fréquence du DR parmi les rétinopathies</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">71,4%</div>
+        <div class="kpi-label">Prédominance masculine</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">59,2%</div>
+        <div class="kpi-label">Cas liés à un traumatisme</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">81,6%</div>
+        <div class="kpi-label">Évolution vers la cécité</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">65,3%</div>
+        <div class="kpi-label">Fond d'œil inaccessible</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIQUES -->
+  <section class="section section-alt">
+    <h2 class="section-title">Visualisations</h2>
+    <div class="graphiques-grid">
+
+      <div class="graphique-bloc">
+        <h3>Répartition par sexe</h3>
+        <p>Distribution des patients selon le sexe.</p>
+        <img src="projets/projet2/graphiques/sexe_donut.png" 
+             alt="Répartition par sexe" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Répartition par tranche d'âge</h3>
+        <p>Distribution des patients selon la tranche d'âge.</p>
+        <img src="projets/projet2/graphiques/tranche_age_donut.png" 
+             alt="Répartition par tranche d'âge" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Sexe selon la tranche d'âge</h3>
+        <p>Croisement entre le sexe et la tranche d'âge des patients.</p>
+        <img src="projets/projet2/graphiques/tranche_age_x_sexe_barres_groupees.png" 
+             alt="Sexe selon tranche d'âge" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Étiologies</h3>
+        <p>Répartition des patients selon l'étiologie du décollement.</p>
+        <img src="projets/projet2/graphiques/etiologie_barres_vert.png" 
+             alt="Étiologies" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Type de décollement</h3>
+        <p>Répartition entre décollement partiel et total.</p>
+        <img src="projets/projet2/graphiques/type_decollement_donut.png" 
+             alt="Type de décollement" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Prise en charge</h3>
+        <p>Répartition entre traitement médical et chirurgical.</p>
+        <img src="projets/projet2/graphiques/prise_en_charge_donut.png" 
+             alt="Prise en charge" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Évolution</h3>
+        <p>Résultats thérapeutiques — amélioration ou cécité.</p>
+        <img src="projets/projet2/graphiques/evolution_donut.png" 
+             alt="Évolution" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Bilan paraclinique</h3>
+        <p>Examens complémentaires réalisés.</p>
+        <img src="projets/projet2/graphiques/bilan_barres_vert.png" 
+             alt="Bilan paraclinique" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERPRÉTATION -->
+  <section class="section">
+    <h2 class="section-title">Interprétation</h2>
+    <div class="interpretation">
+
+      <div class="interpretation-bloc">
+        <h3>Fréquence et profil</h3>
+        <p>
+          Le décollement de la rétine représente 3,5% des pathologies 
+          rétiniennes enregistrées à la CELPA. La prédominance masculine 
+          (71,4%) et la jeunesse des patients — 36,7% entre 16 et 30 ans — 
+          s'expliquent par une exposition plus fréquente aux traumatismes 
+          oculaires dans cette population.
+        </p>
+      </div>
+
+      <div class="interpretation-bloc">
+        <h3>Étiologie dominante</h3>
+        <p>
+          Le traumatisme oculaire constitue la principale cause identifiée 
+          (59,2%), suivi des causes post-uvéitiques (16,3%). Cette 
+          prédominance traumatique est cohérente avec les données africaines 
+          sur le décollement de rétine et reflète le contexte socio-économique 
+          local.
+        </p>
+      </div>
+
+      <div class="interpretation-bloc">
+        <h3>Limitations diagnostiques</h3>
+        <p>
+          Le fond d'œil était inaccessible dans 65,3% des cas, rendant 
+          l'échographie en mode B indispensable comme principal outil 
+          diagnostique. Cette réalité souligne les contraintes techniques 
+          de notre milieu.
+        </p>
+      </div>
+
+      <div class="interpretation-bloc">
+        <h3>Pronostic visuel sévère</h3>
+        <p>
+          L'évolution défavorable dans 81,6% des cas avec cécité reflète 
+          les limitations diagnostiques et thérapeutiques. La majorité des 
+          patients (69,4%) n'a bénéficié que d'un traitement médical, 
+          l'accès à la chirurgie vitréo-rétinienne restant limité.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MÉTHODOLOGIE -->
+  <section class="section section-alt">
+    <h2 class="section-title">Méthodologie</h2>
+    <div class="methodologie">
+      <div class="methode-card">
+        <h3>Source</h3>
+        <p>
+          Dossiers médicaux de la clinique ophtalmologique CELPA Bukavu. 
+          Données collectées via KoboCollect.
+        </p>
+      </div>
+      <div class="methode-card">
+        <h3>Nettoyage</h3>
+        <p>
+          49 lignes analysées. Zéro doublon. 
+          Zéro valeur manquante après traitement. 
+          Colonnes normalisées automatiquement.
+        </p>
+      </div>
+      <div class="methode-card">
+        <h3>Analyse</h3>
+        <p>
+          Statistiques descriptives complètes — fréquences, 
+          pourcentages, tableaux croisés. 
+          Pipeline Organon Data Solutions.
+        </p>
+      </div>
+      <div class="methode-card">
+        <h3>Outils</h3>
+        <p>
+          Python 3 — pandas, numpy, matplotlib, seaborn. 
+          Rapport généré par Organon Data Solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="30" height="30">
+        <line x1="100" y1="10" x2="100" y2="180" stroke="#CD7F32" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="100" cy="120" r="45" fill="none" stroke="#CD7F32" stroke-width="4"/>
+        <polygon points="100,10 190,180 10,180" fill="none" stroke="#CD7F32" stroke-width="4" stroke-linejoin="round"/>
+      </svg>
+      <span>ORGANON</span>
+    </div>
+    <p>© 2026 Organon Data Solutions — Bukavu, RDC</p>
+    <p class="footer-sub">L'outil qui transforme vos données en décisions.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

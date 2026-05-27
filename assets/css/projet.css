@@ -1,0 +1,85 @@
+/* =============================
+   PROJET HERO BTNS
+   ============================= */
+.projet-hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+/* =============================
+   GRAPHIQUES — IMG
+   ============================= */
+.graphique-bloc img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+/* =============================
+   MÉTHODOLOGIE
+   ============================= */
+.methodologie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.methode-card {
+  padding: 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+}
+
+.methode-card h3 {
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  color: #CD7F32;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.methode-card p {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.7;
+}
+
+/* =============================
+   RESPONSIVE PROJET
+   ============================= */
+@media (max-width: 768px) {
+  .projet-hero {
+    padding: 60px 20px;
+  }
+
+  .projet-hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .projet-hero-btns {
+    flex-direction: column;
+  }
+
+  .graphiques-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .interpretation {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}
