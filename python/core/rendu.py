@@ -628,4 +628,227 @@ def rendu_word(
             hdr[1].text = "Valeur"
             for label, val in [
                 ("Lignes avant", rapport_nettoyage.get("lignes_avant", "—")),
- 
+                ("Lignes après", rapport_nettoyage.get("lignes_apres", "—")),
+                ("Doublons supprimés", rapport_nettoyage.get("doublons_supprimes", 0)),
+                ("Lignes vides supprimées", rapport_nettoyage.get("lignes_vides_supprimees", 0)),
+            ]:
+                row = table_nett.add_row().cells
+                row[0].text = str(label)
+                row[1].text = str(val)
+
+        doc.add_page_break()
+
+        # ---- 3. RÉSULTATS ----
+        doc.add_heading("3. Résultats", 1)
+
+        # Stats numériques
+        if resultats_stats and resultats_stats.get("numeriques"):
+            doc.add_heading(
+                "3.1 Statistiques descriptives — Variables numériques", 2
+            )
+            entetes = [
+                "Variable", "N", "Moyenne", "Médiane",
+                "Éc.-type", "Min", "Max", "Outliers"
+            ]
+            table_num = doc.add_table(rows=1, cols=len(entetes))
+            table_num.style = "Table Grid"
+            for i, h in enumerate(entetes):
+                table_num.rows[0].cells[i].text = h
+
+            for col, r in resultats_stats["numeriques"].items():
+                row = table_num.add_row().cells
+                vals = [
+                    col, str(r["n"]), str(r["moyenne"]),
+                    str(r["mediane"]), str(r["ecart_type"]),
+                    str(r["min"]), str(r["max"]), str(r["outliers"]),
+                ]
+                for i, v in enumerate(vals):
+                    row[i].text = v
+
+        # Stats catégorielles
+        if resultats_stats and resultats_stats.get("categories"):
+            doc.add_heading(
+                "3.2 Statistiques descriptives — Variables catégorielles", 2
+            )
+            for col, r in resultats_stats["categories"].items():
+                doc.add_paragraph(f"Variable : {col}")
+                table_cat = doc.add_table(rows=1, cols=3)
+                table_cat.style = "Table Grid"
+                hdr = table_cat.rows[0].cells
+                hdr[0].text = "Modalité"
+                hdr[1].text = "Effectif"
+                hdr[2].text = "Pourcentage"
+                for modalite, vals in r["frequences"].items():
+                    row = table_cat.add_row().cells
+                    row[0].text = str(modalite)
+                    row[1].text = str(vals["n"])
+                    row[2].text = f"{vals['pct']}%"
+
+        doc.add_page_break()
+
+        # Graphiques
+        if fichiers_graphiques:
+            doc.add_heading("3.3 Visualisations", 2)
+            for chemin_graph in fichiers_graphiques:
+                if os.path.exists(chemin_graph):
+                    try:
+                        doc.add_picture(chemin_graph, width=Inches(5.5))
+                        doc.add_paragraph(
+                            os.path.basename(chemin_graph)
+                        ).alignment = WD_ALIGN_PARAGRAPH.CENTER
+                        doc.add_paragraph()
+                    except Exception as e:
+                        _erreur(f"Image non insérée : {e}")
+                else:
+                    _erreur(f"Fichier introuvable : {chemin_graph}")
+
+        doc.add_page_break()
+
+        # ---- 4. INTERPRÉTATION ----
+        doc.add_heading("4. Interprétation", 1)
+
+        if resultats_stats and resultats_stats.get("numeriques"):
+            for col, r in resultats_stats["numeriques"].items():
+                doc.add_heading(col, 2)
+                if abs(r["asymetrie"]) < 0.5:
+                    interp = "Distribution approximativement symétrique."
+                elif r["asymetrie"] > 0.5:
+                    interp = (
+                        "Distribution asymétrique positive "
+                        "(queue longue vers les grandes valeurs)."
+                    )
+                else:
+                    interp = (
+                        "Distribution asymétrique négative "
+                        "(queue longue vers les petites valeurs)."
+                    )
+                if r["outliers"] > 0:
+                    interp += (
+                        f" {r['outliers']} valeur(s) aberrante(s) détectée(s)."
+                    )
+                doc.add_paragraph(interp)
+
+        if meta.get("interpretation"):
+            doc.add_paragraph(meta["interpretation"])
+
+        doc.add_page_break()
+
+        # ---- 5. ANNEXES ----
+        doc.add_heading("5. Annexes", 1)
+        doc.add_paragraph(
+            "Les données complètes nettoyées sont disponibles "
+            "dans le fichier Excel joint."
+        )
+
+        # Pied de page
+        doc.add_paragraph()
+        doc.add_paragraph(ORGANON_SIGNATURE)
+        doc.add_paragraph(f"Rapport généré le {date}")
+
+        doc.save(chemin)
+        _ok(f"Word exporté → {chemin}")
+        return chemin
+
+    except Exception as e:
+        _erreur(f"Word : {e}")
+        return None
+
+
+# =============================
+# PIPELINE PRINCIPAL
+# =============================
+
+def pipeline_rendu(
+    nom_projet,
+    meta,
+    df,
+    rapport_nettoyage,
+    resultats_stats,
+    fichiers_graphiques,
+    dossier=None,
+):
+    """
+    Pipeline interactif de rendu.
+    Laisse l'utilisateur choisir le format.
+
+    Usage :
+      from core.rendu import pipeline_rendu
+      pipeline_rendu(
+          nom_projet        = "projet1",
+          meta              = {...},
+          df                = df,
+          rapport_nettoyage = rapport,
+          resultats_stats   = resultats,
+          fichiers_graphiques = fichiers,
+      )
+    """
+    _titre("RENDU")
+    print("  Formats disponibles :")
+    print("    1. PDF        — rapport complet")
+    print("    2. Excel      — données + statistiques")
+    print("    3. Word       — rapport éditable")
+    print("    4. Tout       — les trois formats")
+    print()
+
+    choix_raw = input("  Votre choix (ex: 1,2) : ").strip()
+
+    if not choix_raw:
+        print("  Aucun rendu produit.")
+        return []
+
+    # Option 4 = tout
+    if "4" in choix_raw:
+        choix = ["1", "2", "3"]
+    else:
+        choix = [c.strip() for c in choix_raw.split(",") if c.strip() in ["1","2","3"]]
+
+    fichiers_produits = []
+
+    for c in choix:
+        if c == "1":
+            print(f"\n  PDF   : en cours...")
+            chemin = rendu_pdf(
+                f"rapport_{nom_projet}.pdf",
+                meta,
+                rapport_nettoyage,
+                resultats_stats,
+                fichiers_graphiques,
+                dossier,
+            )
+            if chemin:
+                fichiers_produits.append(chemin)
+
+        elif c == "2":
+            print(f"\n  Excel : en cours...")
+            chemin = rendu_excel(
+                f"{nom_projet}_donnees.xlsx",
+                df,
+                resultats_stats,
+                dossier,
+            )
+            if chemin:
+                fichiers_produits.append(chemin)
+
+        elif c == "3":
+            print(f"\n  Word  : en cours...")
+            chemin = rendu_word(
+                f"rapport_{nom_projet}.docx",
+                meta,
+                rapport_nettoyage,
+                resultats_stats,
+                fichiers_graphiques,
+                dossier,
+            )
+            if chemin:
+                fichiers_produits.append(chemin)
+
+    print()
+    print("=" * 52)
+    print(f"  [ RENDU ] Terminé ✓")
+    print(f"  Fichiers produits : {len(fichiers_produits)}")
+    for f in fichiers_produits:
+        print(f"    — {f}")
+    print("=" * 52)
+    print()
+
+    return fichiers_produits
