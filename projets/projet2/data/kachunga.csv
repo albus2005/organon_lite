@@ -1,0 +1,50 @@
+id,age,tranche_age,sexe,profession,residence,niveau_instruction,statut_matrimonial,atcd_medicaux,atcd_ophtalmologiques,motif_consultation,lateralite,type_decollement,fond_oeil,pression_intraoculaire,bilan,etiologie,prise_en_charge,evolution
+1,22,16-30,M,Etudiant,Bukavu,Secondaire,Celibataire,Aucun,Traumatisme,Baisse de vision,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+2,17,16-30,M,Etudiant,Bukavu,Secondaire,Celibataire,Aucun,Traumatisme,Baisse de vision,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+3,28,16-30,M,Commercant,Bukavu,Secondaire,Marie,Aucun,Traumatisme,Baisse de vision,Droit,Partiel,FO inaccessible,>=21,Echographie et photo,Traumatisme,Medical,Cecite
+4,25,16-30,F,Sans profession,Bukavu,Universitaire,Celibataire,Aucun,Traumatisme,Baisse de vision,Gauche,Partiel,PVR,<=20,Echographie et photo,Traumatisme,Chirurgical,Amelioration
+5,19,16-30,M,Etudiant,Bukavu,Secondaire,Celibataire,Aucun,Traumatisme,Baisse de vision,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+6,23,16-30,M,Sans profession,Hors Bukavu,Secondaire,Celibataire,Aucun,Traumatisme,Baisse de vision,Droit,Partiel,FO inaccessible,>=21,Echographie,Traumatisme,Medical,Cecite
+7,29,16-30,M,Commercant,Bukavu,Secondaire,Marie,Aucun,Traumatisme,Baisse de vision;Douleur,Droit,Partiel,Dechirure retinienne,<=20,Echographie et photo,Traumatisme,Chirurgical,Amelioration
+8,27,16-30,F,Etudiant,Bukavu,Universitaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Flou visuel,Gauche,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+9,24,16-30,M,Sans profession,Hors Bukavu,Primaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Douleur,Droit,Partiel,FO inaccessible,>=21,Echographie,Traumatisme,Medical,Cecite
+10,26,16-30,M,Agent de l'Etat,Bukavu,Universitaire,Marie,Aucun,Traumatisme,Baisse de vision;Flou visuel,Droit,Partiel,FO inaccessible,<=20,Echographie et photo,Traumatisme,Chirurgical,Amelioration
+11,18,16-30,M,Etudiant,Bukavu,Secondaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Rougeur,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+12,21,16-30,F,Sans profession,Bukavu,Secondaire,Celibataire,Aucun,Uvéite,Baisse de vision;Flou visuel,Gauche,Partiel,PVR,<=20,Echographie et photo,Post-uvéite,Medical,Cecite
+13,20,16-30,M,Etudiant,Hors Bukavu,Secondaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Douleur,Droit,Partiel,FO inaccessible,>=21,Echographie,Traumatisme,Medical,Cecite
+14,30,16-30,M,Commercant,Bukavu,Secondaire,Marie,Aucun,Traumatisme,Baisse de vision;Rougeur,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+15,16,16-30,M,Etudiant,Bukavu,Secondaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Corps etranger,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+16,16,16-30,M,Etudiant,Bukavu,Secondaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Douleur,Droit,Partiel,FO inaccessible,>=21,Echographie,Traumatisme,Medical,Cecite
+17,50,>45,M,Agent de l'Etat,Bukavu,Universitaire,Marie,HTA,Aucun,Baisse de vision;Flou visuel,Droit,Partiel,FO inaccessible,>=21,Echographie et photo,Inconnue,Medical,Cecite
+18,55,>45,F,Sans profession,Bukavu,Primaire,Mariee,HTA;DBT,Aucun,Baisse de vision;Flou visuel,Gauche,Partiel,Oedeme retinien et decollement total,>=21,Echographie et photo,Post-uvéite,Medical,Cecite
+19,60,>45,M,Agent de l'Etat,Bukavu,Universitaire,Marie,HTA;DBT,Aucun,Baisse de vision;Cephalees,Droit,Total,Oedeme retinien et decollement total,>=21,Echographie et photo,Inconnue,Medical,Cecite
+20,48,>45,M,Commercant,Hors Bukavu,Secondaire,Marie,HTA;DBT,Aucun,Baisse de vision;Flou visuel,Droit,Partiel,FO inaccessible,>=21,Echographie,Inconnue,Medical,Cecite
+21,52,>45,F,Sans profession,Bukavu,Aucun,Veuve,HTA;DBT,Aucun,Baisse de vision;Flou visuel,Gauche,Total,Oedeme retinien et decollement total,>=21,Echographie,Inconnue,Medical,Cecite
+22,47,>45,M,Commercant,Bukavu,Secondaire,Marie,HTA;DBT,Aucun,Baisse de vision;Cephalees,Droit,Partiel,FO inaccessible,>=21,Echographie et photo,Post-uvéite,Medical,Cecite
+23,58,>45,M,Agent de l'Etat,Bukavu,Universitaire,Marie,HTA;DBT,Aucun,Baisse de vision;Flou visuel,Droit,Total,Oedeme retinien et decollement total,>=21,Echographie et photo,Inconnue,Chirurgical,Amelioration
+24,53,>45,F,Sans profession,Hors Bukavu,Primaire,Mariee,HTA;DBT,Aucun,Baisse de vision;Rougeur,Bilatérale,Partiel,FO inaccessible,>=21,Echographie,Post-uvéite,Medical,Cecite
+25,49,>45,M,Commercant,Bukavu,Secondaire,Marie,HTA,Aucun,Baisse de vision;Flou visuel,Droit,Partiel,FO inaccessible,<=20,Echographie,Inconnue,Medical,Cecite
+26,46,>45,M,Agent de l'Etat,Hors Bukavu,Universitaire,Marie,HTA;DBT,Aucun,Baisse de vision;Cephalees,Droit,Partiel,FO inaccessible,>=21,Echographie et photo,Post-uvéite,Medical,Cecite
+27,51,>45,F,Sans profession,Bukavu,Aucun,Mariee,HTA;DBT,Aucun,Baisse de vision;Flou visuel,Gauche,Total,FO inaccessible,>=21,Echographie,Inconnue,Medical,Cecite
+28,57,>45,M,Commercant,Bukavu,Secondaire,Marie,HTA,Aucun,Baisse de vision;Rougeur,Droit,Partiel,FO inaccessible,<=20,Echographie,Post-uvéite,Medical,Cecite
+29,56,>45,M,Agent de l'Etat,Bukavu,Universitaire,Marie,HTA;DBT,Aucun,Baisse de vision;Flou visuel,Bilatérale,Total,Oedeme retinien et decollement total,>=21,Echographie et photo,Inconnue,Chirurgical,Amelioration
+30,54,>45,F,Sans profession,Hors Bukavu,Secondaire,Mariee,HTA;DBT,Aucun,Baisse de vision;Cephalees,Droit,Partiel,FO inaccessible,>=21,Echographie,Post-uvéite,Medical,Cecite
+31,35,31-45,M,Commercant,Bukavu,Secondaire,Marie,Aucun,Traumatisme,Baisse de vision;Douleur,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+32,38,31-45,M,Agent de l'Etat,Bukavu,Universitaire,Marie,Aucun,Traumatisme,Baisse de vision;Flou visuel,Droit,Partiel,Dechirure retinienne,<=20,Echographie et photo,Traumatisme,Chirurgical,Amelioration
+33,41,31-45,F,Sans profession,Hors Bukavu,Secondaire,Mariee,Aucun,Uvéite,Baisse de vision;Rougeur,Gauche,Partiel,PVR,<=20,Echographie et photo,Post-uvéite,Medical,Cecite
+34,33,31-45,M,Commercant,Bukavu,Secondaire,Marie,Aucun,Traumatisme,Baisse de vision;Corps etranger,Droit,Partiel,FO inaccessible,>=21,Echographie,Traumatisme,Medical,Cecite
+35,44,31-45,M,Agent de l'Etat,Bukavu,Universitaire,Marie,Aucun,Traumatisme,Baisse de vision;Flou visuel,Droit,Partiel,FO inaccessible,<=20,Echographie et photo,Traumatisme,Chirurgical,Amelioration
+36,36,31-45,F,Sans profession,Bukavu,Secondaire,Mariee,Aucun,Uvéite,Baisse de vision;Rougeur,Bilatérale,Partiel,PVR,<=20,Echographie et photo,Post-uvéite,Medical,Cecite
+37,40,31-45,M,Commercant,Hors Bukavu,Primaire,Marie,Aucun,Traumatisme,Baisse de vision;Douleur,Droit,Partiel,FO inaccessible,>=21,Echographie,Traumatisme,Medical,Cecite
+38,42,31-45,M,Agent de l'Etat,Bukavu,Universitaire,Marie,Aucun,Traumatisme,Baisse de vision;Flou visuel,Droit,Total,Hemorragie,<=20,Echographie et photo,Traumatisme,Chirurgical,Amelioration
+39,10,<=15,M,Etudiant,Bukavu,Primaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Douleur,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+40,8,<=15,M,Etudiant,Bukavu,Primaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Rougeur,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+41,12,<=15,F,Etudiant,Hors Bukavu,Primaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Corps etranger,Gauche,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+42,6,<=15,M,Etudiant,Bukavu,Aucun,Celibataire,Aucun,Traumatisme,Baisse de vision;Douleur,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+43,14,<=15,M,Etudiant,Bukavu,Primaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Rougeur,Droit,Partiel,FO inaccessible,>=21,Echographie,Traumatisme,Medical,Cecite
+44,11,<=15,F,Etudiant,Bukavu,Primaire,Celibataire,Aucun,Traumatisme,Baisse de vision;Corps etranger,Droit,Partiel,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+45,9,<=15,M,Etudiant,Hors Bukavu,Aucun,Celibataire,Aucun,Traumatisme,Baisse de vision;Douleur,Bilatérale,Total,FO inaccessible,<=20,Echographie,Traumatisme,Medical,Cecite
+46,32,31-45,M,Commercant,Bukavu,Secondaire,Marie,Aucun,Myopie forte,Baisse de vision;Flou visuel,Droit,Partiel,Decollement subtotal,<=20,Echographie et photo,Inconnue,Medical,Cecite
+47,45,31-45,F,Sans profession,Bukavu,Secondaire,Mariee,Aucun,Myopie forte,Baisse de vision;Flou visuel,Gauche,Partiel,PVR,<=20,Echographie et photo,Inconnue,Chirurgical,Amelioration
+48,39,31-45,M,Agent de l'Etat,Hors Bukavu,Universitaire,Marie,Aucun,Uvéite,Baisse de vision;Rougeur,Droit,Partiel,Oedeme papillaire,<=20,Echographie et photo,Post-uvéite,Medical,Cecite
+49,43,31-45,M,Commercant,Bukavu,Secondaire,Marie,Aucun,Traumatisme,Baisse de vision;Lésion oculaire,Droit,Total,FO inaccessible,>=21,Echographie,Traumatisme,Chirurgical,Amelioration
