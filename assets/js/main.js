@@ -197,7 +197,7 @@ console.log('👉 Burger menu:', burger ? 'trouvé' : 'non trouvé');
 console.log('👉 Process section:', processToggle ? 'trouvée' : 'non trouvée');
 
 // =============================
-// PETIT BONUS : EMPÊCHER LE CLIC SUR LIEN VIDE DE RECHARGER
+// PETIT BONUS : EMPÊCHER LE CLIC SUR LIEN VIDE DE RECHARGER-
 // =============================
 document.querySelectorAll('a[href="#"]').forEach(emptyLink => {
   emptyLink.addEventListener('click', (e) => {
