@@ -45,6 +45,7 @@ img, svg {
   top: 0;
   z-index: 100;
   transition: box-shadow 0.3s;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -71,6 +72,7 @@ img, svg {
   letter-spacing: 1px;
   color: #1A1A2E;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -97,6 +99,7 @@ img, svg {
   letter-spacing: 1px;
   transition: background-color 0.3s;
   cursor: pointer;
+  border: none;
 }
 
 .btn-primary:hover {
@@ -113,11 +116,102 @@ img, svg {
   letter-spacing: 1px;
   transition: all 0.3s;
   cursor: pointer;
+  background: transparent;
 }
 
 .btn-secondary:hover {
   background-color: #CD7F32;
   color: #FFFFFF;
+}
+
+.btn-details {
+  background: none;
+  border: none;
+  color: #CD7F32;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 8px 0 0;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.btn-details:hover {
+  color: #b86e28;
+}
+
+/* =============================
+   MODAL (POPUP)
+   ============================= */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  max-width: 500px;
+  width: 90%;
+  padding: 28px;
+  border-radius: 12px;
+  border-top: 4px solid #CD7F32;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #CD7F32;
+}
+
+.modal-content h4 {
+  color: #1A1A2E;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #CD7F32;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.modal-content p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.modal-content ul {
+  margin: 12px 0 12px 20px;
+  list-style: disc;
+}
+
+.modal-content ul li {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 6px;
 }
 
 /* =============================
@@ -218,6 +312,95 @@ img, svg {
 }
 
 /* =============================
+   PROCESS (accordéon discret)
+   ============================= */
+.process-section {
+  max-width: 700px;
+  margin: 40px auto 60px;
+  background-color: #F9F7F4;
+  border-radius: 12px;
+  padding: 8px 20px;
+  border: 1px solid #E5E7EB;
+}
+
+.process-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.process-title {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #1A1A2E;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.process-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #CD7F32;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.process-toggle.open {
+  transform: rotate(180deg);
+}
+
+.process-content {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  max-height: 500px;
+}
+
+.process-content.hidden-process {
+  max-height: 0;
+  padding: 0;
+}
+
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #E5E7EB;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #CD7F32;
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-text strong {
+  color: #1A1A2E;
+}
+
+.step-text p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+/* =============================
    À PROPOS
    ============================= */
 .apropos-wrapper {
@@ -264,6 +447,14 @@ img, svg {
   color: #374151;
   margin-bottom: 16px;
   line-height: 1.8;
+}
+
+.confidentialite {
+  background-color: #F9F7F4;
+  padding: 12px 16px;
+  border-left: 3px solid #CD7F32;
+  font-style: italic;
+  margin: 20px 0;
 }
 
 .apropos-competences {
@@ -357,6 +548,16 @@ img, svg {
   width: fit-content;
 }
 
+.badge-generique {
+  background-color: #E5E7EB;
+  color: #374151;
+  font-size: 0.7rem;
+  margin-left: 8px;
+  vertical-align: middle;
+  padding: 2px 6px;
+  border-radius: 12px;
+}
+
 .projet-card h3 {
   font-size: 1.1rem;
   color: #1A1A2E;
@@ -390,7 +591,7 @@ img, svg {
    ============================= */
 .tarifs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
   align-items: start;
 }
@@ -405,6 +606,7 @@ img, svg {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  height: 100%;
 }
 
 .tarif-featured {
@@ -429,22 +631,23 @@ img, svg {
   font-size: 1.1rem;
   letter-spacing: 1px;
   color: #1A1A2E;
+  margin: 0;
 }
 
 .tarif-prix {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #CD7F32;
 }
 
 .tarif-prix span {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: normal;
   color: #374151;
 }
 
 .tarif-delai {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #374151;
   background-color: #F9F7F4;
   padding: 6px 12px;
@@ -458,12 +661,15 @@ img, svg {
   flex-direction: column;
   gap: 8px;
   flex: 1;
+  margin: 8px 0;
+  padding-left: 0;
 }
 
 .tarif-card ul li {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #374151;
   padding-left: 4px;
+  list-style: none;
 }
 
 .tarif-card ul li::before {
@@ -474,7 +680,7 @@ img, svg {
 
 .tarif-note {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #374151;
   margin-top: 32px;
   font-style: italic;
@@ -580,10 +786,19 @@ img, svg {
 }
 
 /* =============================
-   RESPONSIVE
+   RESPONSIVE (CORRIGÉ)
    ============================= */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}
 
+@media (max-width: 768px) {
   .navbar {
     padding: 16px 20px;
   }
@@ -600,10 +815,23 @@ img, svg {
     border-bottom: 2px solid #CD7F32;
     gap: 16px;
     z-index: 99;
+    width: 100%;
   }
 
   .nav-links.nav-open {
     display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+    font-size: 1rem;
+    white-space: normal;
   }
 
   .burger {
@@ -667,10 +895,23 @@ img, svg {
   .footer {
     padding: 40px 20px;
   }
+
+  .process-section {
+    margin: 20px;
+  }
+
+  .step {
+    gap: 12px;
+  }
+
+  .step-number {
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-
   .nav-title {
     font-size: 1rem;
     letter-spacing: 2px;
@@ -686,7 +927,7 @@ img, svg {
   }
 
   .tarif-prix {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .hero-btns {
