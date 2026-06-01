@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet 3 — Prééclampsie HGR Panzi | Organon</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/projet.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="40" height="40">
+        <line x1="100" y1="10" x2="100" y2="180" stroke="#374151" stroke-width="4" stroke-linecap="round" stroke-dasharray="170" stroke-dashoffset="170">
+          <animate attributeName="stroke-dashoffset" from="170" to="0" dur="0.8s" begin="0s" fill="freeze"/>
+        </line>
+        <circle cx="100" cy="120" r="45" fill="none" stroke="#374151" stroke-width="4" stroke-dasharray="283" stroke-dashoffset="283">
+          <animate attributeName="stroke-dashoffset" from="283" to="0" dur="0.8s" begin="0.8s" fill="freeze"/>
+        </circle>
+        <polygon points="100,10 190,180 10,180" fill="none" stroke="#374151" stroke-width="4" stroke-linejoin="round" stroke-dasharray="565" stroke-dashoffset="565">
+          <animate attributeName="stroke-dashoffset" from="565" to="0" dur="1.2s" begin="1.6s" fill="freeze"/>
+        </polygon>
+      </svg>
+      <span class="nav-title">ORGANON</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#projets">← Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="burger">&#9776;</div>
+  </nav>
+
+  <!-- EN-TÊTE PROJET -->
+  <section class="projet-hero">
+    <div class="projet-hero-content">
+      <div class="projet-tag">Gynécologie — Obstétrique</div>
+      <h1>
+        Étude épidémiologique et clinique de la prééclampsie —
+        HGR de Panzi, Bukavu
+      </h1>
+      <p class="projet-meta">
+        94 patientes · 5 830 accouchements · Janvier 2023 — Décembre 2024
+      </p>
+      <p class="projet-desc">
+        Étude rétrospective, descriptive et analytique menée au département 
+        de Gynécologie-Obstétrique de l'Hôpital Général de Référence de Panzi 
+        à Bukavu. Analyse de la prévalence, des facteurs de risque, des 
+        complications materno-fœtales et des modalités de prise en charge 
+        de la prééclampsie dans un contexte à ressources limitées.
+      </p>
+      <p class="projet-credit">
+        Données : <strong>BANENE MWAMINI Divine</strong> — 
+        Mémoire de fin d'études, UOB 2023-2024 · 
+        Directeur : CT Dr Philémon MATABISHI · 
+        Analyse : Organon Data Solutions
+      </p>
+      <div class="projet-hero-btns">
+        <a href="projets/projet3/rapports/rapport_projet3_divine.pdf"
+           download class="btn-primary">
+          Télécharger le rapport PDF
+        </a>
+        <a href="projets/projet3/rapports/projet3_divine_donnees.xlsx"
+           download class="btn-secondary">
+          Télécharger les données Excel
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES CLÉS -->
+  <section class="section">
+    <h2 class="section-title">Chiffres clés</h2>
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-valeur">94</div>
+        <div class="kpi-label">Cas de prééclampsie</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">1,61%</div>
+        <div class="kpi-label">Prévalence parmi les accouchements</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">64,9%</div>
+        <div class="kpi-label">Patientes âgées de 20 à 35 ans</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">44,7%</div>
+        <div class="kpi-label">Primipares</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">29,7%</div>
+        <div class="kpi-label">Complications par éclampsie</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">37,2%</div>
+        <div class="kpi-label">Mortalité néonatale</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">96,8%</div>
+        <div class="kpi-label">Pronostic maternel favorable</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-valeur">73,4%</div>
+        <div class="kpi-label">Moins de 4 consultations prénatales</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRAPHIQUES -->
+  <section class="section section-alt">
+    <h2 class="section-title">Visualisations</h2>
+    <div class="graphiques-grid">
+
+      <div class="graphique-bloc">
+        <h3>Répartition par tranche d'âge</h3>
+        <p>Distribution des patientes selon la tranche d'âge.</p>
+        <img src="projets/projet3/graphiques/tranche_age_barres_vert.png"
+             alt="Tranche d'âge" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Statut matrimonial</h3>
+        <p>Répartition selon le statut matrimonial des patientes.</p>
+        <img src="projets/projet3/graphiques/statut_matrimonial_barres_vert.png"
+             alt="Statut matrimonial" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Provenance</h3>
+        <p>Milieu urbain ou rural de résidence des patientes.</p>
+        <img src="projets/projet3/graphiques/provenance_donut.png"
+             alt="Provenance" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Profession</h3>
+        <p>Répartition selon la catégorie professionnelle.</p>
+        <img src="projets/projet3/graphiques/profession_barres_vert.png"
+             alt="Profession" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Motifs de consultation</h3>
+        <p>Principaux motifs d'admission des patientes.</p>
+        <img src="projets/projet3/graphiques/motif_consultation_barres_vert.png"
+             alt="Motifs de consultation" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Parité</h3>
+        <p>Répartition selon le nombre d'accouchements antérieurs.</p>
+        <img src="projets/projet3/graphiques/parite_barres_vert.png"
+             alt="Parité" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Antécédents médicaux</h3>
+        <p>Antécédents personnels médicaux des patientes.</p>
+        <img src="projets/projet3/graphiques/atcd_medicaux_barres_vert.png"
+             alt="Antécédents médicaux" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Prestataire à l'admission</h3>
+        <p>Personnel soignant ayant pris en charge la patiente à l'admission.</p>
+        <img src="projets/projet3/graphiques/prestataire_admission_donut.png"
+             alt="Prestataire à l'admission" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Protéinurie à la bandelette</h3>
+        <p>Niveau de protéinurie détecté à l'admission.</p>
+        <img src="projets/projet3/graphiques/proteinuirie_barres_vert.png"
+             alt="Protéinurie" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Traitement médical</h3>
+        <p>Protocoles thérapeutiques administrés aux patientes.</p>
+        <img src="projets/projet3/graphiques/traitement_barres_vert.png"
+             alt="Traitement médical" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Voie d'accouchement</h3>
+        <p>Répartition entre césarienne et accouchement par voie basse.</p>
+        <img src="projets/projet3/graphiques/voie_accouchement_barres_vert.png"
+             alt="Voie d'accouchement" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Complications maternelles</h3>
+        <p>Types de complications maternelles observées.</p>
+        <img src="projets/projet3/graphiques/complications_maternelles_barres_vert.png"
+             alt="Complications maternelles" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Pronostic maternel</h3>
+        <p>Évolution du pronostic maternel — favorable ou défavorable.</p>
+        <img src="projets/projet3/graphiques/pronostic_maternel_barres_vert.png"
+             alt="Pronostic maternel" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Pronostic néonatal</h3>
+        <p>Issues néonatales — nouveau-né vivant, mort-né, décès précoce.</p>
+        <img src="projets/projet3/graphiques/pronostic_neonatal_barres_vert.png"
+             alt="Pronostic néonatal" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Consultations prénatales</h3>
+        <p>Nombre de consultations prénatales effectuées avant l'admission.</p>
+        <img src="projets/projet3/graphiques/cpn_barres_vert.png"
+             alt="Consultations prénatales" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Séjour à l'hôpital</h3>
+        <p>Durée d'hospitalisation des patientes.</p>
+        <img src="projets/projet3/graphiques/sejour_hopital_barres_vert.png"
+             alt="Séjour à l'hôpital" />
+      </div>
+
+      <div class="graphique-bloc">
+        <h3>Répartition par année</h3>
+        <p>Distribution des cas selon l'année — 2023 et 2024.</p>
+        <img src="projets/projet3/graphiques/annee_densite.png"
+             alt="Répartition par année" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERPRÉTATION -->
+  <section class="section">
+    <h2 class="section-title">Interprétation</h2>
+    <div class="interpretation">
+
+      <div class="interpretation-bloc">
+        <h3>Profil épidémiologique</h3>
+        <p>
+          La prééclampsie touche principalement les femmes mariées (90,4%) 
+          âgées de 20 à 35 ans (64,9%), en majorité ménagères (64,9%) 
+          et provenant du milieu urbain (59,6%). Les primigestes (40,4%) 
+          et primipares (44,7%) sont les plus représentées, confirmant 
+          le rôle de la primiparité comme facteur de risque majeur.
+        </p>
+      </div>
+
+      <div class="interpretation-bloc">
+        <h3>Suivi prénatal insuffisant</h3>
+        <p>
+          Plus de 73,4% des patientes ont effectué moins de 4 consultations 
+          prénatales, compromettant la détection précoce des signes de gravité. 
+          Ce déficit de suivi constitue un facteur déterminant dans la sévérité 
+          des tableaux cliniques observés à l'admission.
+        </p>
+      </div>
+
+      <div class="interpretation-bloc">
+        <h3>Complications graves fréquentes</h3>
+        <p>
+          L'éclampsie (29,7%), l'hématome rétroplacentaire (10,6%) et le 
+          syndrome HELLP (8,5%) représentent les complications maternelles 
+          les plus fréquentes. Malgré leur gravité, le pronostic maternel 
+          reste favorable dans 96,8% des cas grâce à une prise en charge 
+          thérapeutique adaptée.
+        </p>
+      </div>
+
+      <div class="interpretation-bloc">
+        <h3>Mortalité néonatale préoccupante</h3>
+        <p>
+          Le taux de mortalité néonatale atteint 37,2% — incluant 24,47% 
+          de mort-nés et 12,76% de décès néonataux précoces. Ce résultat 
+          reflète les conséquences de la prématurité induite et de l'asphyxie 
+          fœtale, soulignant l'urgence d'améliorer la surveillance fœtale 
+          et les soins néonatals.
+        </p>
+      </div>
+
+      <div class="interpretation-bloc">
+        <h3>Prise en charge conforme aux recommandations</h3>
+        <p>
+          La nicardipine (91,4%) et le sulfate de magnésium (80,85%) 
+          ont été les traitements de référence utilisés, conformément 
+          aux protocoles internationaux. La césarienne a été privilégiée 
+          dans 58,5% des cas pour garantir la sécurité maternelle et fœtale.
+        </p>
+      </div>
+
+      <div class="interpretation-bloc">
+        <h3>Augmentation des cas en 2024</h3>
+        <p>
+          Une augmentation significative des cas a été observée entre 2023 
+          (35,1%) et 2024 (64,9%), suggérant soit une meilleure détection 
+          des cas, soit une augmentation réelle de la prévalence nécessitant 
+          une surveillance épidémiologique renforcée.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MÉTHODOLOGIE -->
+  <section class="section section-alt">
+    <h2 class="section-title">Méthodologie</h2>
+    <div class="methodologie">
+      <div class="methode-card">
+        <h3>Source</h3>
+        <p>
+          Dossiers médicaux, registres d'accouchement et carnets de 
+          consultations prénatales de l'HGR de Panzi — Bukavu, RDC.
+        </p>
+      </div>
+      <div class="methode-card">
+        <h3>Critères d'inclusion</h3>
+        <p>
+          PA ≥ 140/90 mmHg associée à une protéinurie à partir de 
+          20 semaines d'aménorrhée. Étude rétrospective descriptive 
+          et analytique.
+        </p>
+      </div>
+      <div class="methode-card">
+        <h3>Nettoyage</h3>
+        <p>
+          94 patientes analysées. Zéro doublon. 
+          Colonnes normalisées automatiquement. 
+          Pipeline Organon Data Solutions.
+        </p>
+      </div>
+      <div class="methode-card">
+        <h3>Outils</h3>
+        <p>
+          Python 3 — pandas, numpy, matplotlib, seaborn. 
+          Rapport PDF, Excel et Word générés automatiquement 
+          par Organon Data Solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="30" height="30">
+        <line x1="100" y1="10" x2="100" y2="180" stroke="#CD7F32" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="100" cy="120" r="45" fill="none" stroke="#CD7F32" stroke-width="4"/>
+        <polygon points="100,10 190,180 10,180" fill="none" stroke="#CD7F32" stroke-width="4" stroke-linejoin="round"/>
+      </svg>
+      <span>ORGANON</span>
+    </div>
+    <p>© 2026 Organon Data Solutions — Bukavu, RDC</p>
+    <p class="footer-sub">L'outil qui transforme vos données en décisions.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

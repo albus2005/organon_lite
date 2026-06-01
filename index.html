@@ -8,9 +8,12 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- =============================
+       NAVIGATION
+       ============================= -->
   <nav class="navbar">
     <div class="nav-logo">
+      <!-- Logo Harry Potter / Reliques de la Mort -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="40" height="40">
         <line x1="100" y1="10" x2="100" y2="180" stroke="#374151" stroke-width="4" stroke-linecap="round" stroke-dasharray="170" stroke-dashoffset="170">
           <animate attributeName="stroke-dashoffset" from="170" to="0" dur="0.8s" begin="0s" fill="freeze"/>
@@ -33,7 +36,9 @@
     <div class="burger">&#9776;</div>
   </nav>
 
-  <!-- HERO -->
+  <!-- =============================
+       HERO
+       ============================= -->
   <section class="hero">
     <div class="hero-content">
       <p class="hero-tag">Bukavu — RDC</p>
@@ -49,7 +54,9 @@
     </div>
   </section>
 
-  <!-- À PROPOS -->
+  <!-- =============================
+       À PROPOS
+       ============================= -->
   <section class="section" id="apropos">
     <h2 class="section-title">À propos</h2>
     <div class="apropos-wrapper">
@@ -69,14 +76,13 @@
       </div>
 
       <div class="apropos-content">
-        <p class="apropos-name">Aristote LUBALA </p>
+        <p class="apropos-name">Aristote LUBALA</p>
         <p class="apropos-role">Fondateur — Organon Data Solutions</p>
 
         <p class="apropos-texte">
-          Les années de fin de cycle sont parmi les plus exigeantes du parcours 
-          académique. Entre les cours, les examens, les stages et l'écriture du 
-          mémoire, le temps manque — et l'analyse de données devient un obstacle 
-          de plus à surmonter.
+          <strong>Étudiant comme vous</strong>, je connais les difficultés des années de fin de cycle. 
+          Entre les cours, les examens, les stages et l'écriture du mémoire, le temps manque — 
+          et l'analyse de données devient un obstacle de plus à surmonter.
         </p>
         <p class="apropos-texte">
           Organon est né de ce constat. Nous prenons en charge cette tâche 
@@ -88,6 +94,11 @@
           nous les transformons en résultats clairs, exploitables et défendables 
           devant un jury. Avec un accompagnement jusqu'à la soutenance.
         </p>
+
+        <!-- Confidentialité -->
+        <div class="confidentialite">
+          🔒 Toutes vos données sont traitées avec confidentialité. Aucun partage, aucune publication sans votre accord.
+        </div>
 
         <div class="apropos-competences">
           <span class="competence-tag">Python</span>
@@ -103,7 +114,6 @@
 
     </div>
 
-    <!-- VALEURS -->
     <div class="valeurs">
       <div class="valeur-card">
         <span class="valeur-icon">
@@ -135,7 +145,9 @@
     </div>
   </section>
 
-  <!-- PROJETS -->
+  <!-- =============================
+       PROJETS (avec projet 3 ajouté)
+       ============================= -->
   <section class="section section-alt" id="projets">
     <h2 class="section-title">Projets</h2>
     <p class="section-sub">
@@ -144,8 +156,9 @@
     </p>
     <div class="projets-grid">
 
+      <!-- Projet 1 : générique -->
       <div class="projet-card">
-        <div class="projet-tag">Épidémiologie</div>
+        <div class="projet-tag">Épidémiologie <span class="badge-generique">(exemple générique)</span></div>
         <h3>Prévalence du paludisme</h3>
         <p>
           Analyse de la distribution du paludisme chez les enfants 
@@ -157,6 +170,7 @@
         </div>
       </div>
 
+      <!-- Projet 2 : Ophtalmologie -->
       <div class="projet-card">
         <div class="projet-tag">Ophtalmologie</div>
         <h3>Décollement de la rétine</h3>
@@ -170,10 +184,27 @@
         </div>
       </div>
 
+      <!-- Projet 3 : Gynécologie (NOUVEAU) -->
+      <div class="projet-card">
+        <div class="projet-tag">Gynécologie — Obstétrique</div>
+        <h3>Prééclampsie à l'HGR Panzi</h3>
+        <p>
+          Étude épidémiologique et clinique de la prééclampsie — prévalence, 
+          facteurs de risque, complications materno-fœtales et prise en charge 
+          à l'Hôpital Général de Référence de Panzi, Bukavu.
+        </p>
+        <div class="projet-footer">
+          <span class="projet-meta">94 patientes · 2023–2024</span>
+          <a href="projet3.html" class="btn-secondary">Voir le projet</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- TARIFS -->
+  <!-- =============================
+       TARIFS
+       ============================= -->
   <section class="section" id="tarifs">
     <h2 class="section-title">Tarifs</h2>
     <p class="section-sub">
@@ -181,65 +212,149 @@
     </p>
     <div class="tarifs-grid">
 
+      <!-- Offre 1 -->
       <div class="tarif-card">
-        <h3>Analyse</h3>
+        <h3>Analyse Essentielle</h3>
         <div class="tarif-prix">12 500 <span>CDF</span></div>
         <div class="tarif-delai">⏱ Livraison 24h</div>
         <ul>
-          <li>Nettoyage des données</li>
-          <li>Analyse statistique complète</li>
-          <li>Rapport console détaillé</li>
+          <li>Rapport PDF + Word éditable</li>
+          <li>Script Python/SPSS commenté</li>
+          <li>Interprétation écrite</li>
         </ul>
-        <a href="#contact" class="btn-primary">Commencer</a>
+        <button class="btn-details" data-modal="modal1">📖 En savoir plus</button>
+        <a href="https://wa.me/243852591414?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20%22Analyse%20Essentielle%22%20(12500%20CDF).%20Je%20souhaite%20commander." class="btn-primary">Commencer</a>
       </div>
 
+      <!-- Offre 2 -->
       <div class="tarif-card">
         <h3>Analyse + Graphiques</h3>
         <div class="tarif-prix">25 000 <span>CDF</span></div>
         <div class="tarif-delai">⏱ Livraison 48h</div>
         <ul>
-          <li>Tout le pack Analyse</li>
-          <li>Graphiques professionnels</li>
-          <li>Visualisations adaptées</li>
+          <li>Tout l'offre 1</li>
+          <li>Graphiques PNG HD</li>
+          <li>PPTX avec légendes</li>
         </ul>
-        <a href="#contact" class="btn-primary">Commencer</a>
+        <button class="btn-details" data-modal="modal2">📖 En savoir plus</button>
+        <a href="https://wa.me/243852591414?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20%22Analyse%20%2B%20Graphiques%22%20(25000%20CDF)." class="btn-primary">Commencer</a>
       </div>
 
+      <!-- Offre 3 (Recommandée) -->
       <div class="tarif-card tarif-featured">
         <div class="tarif-badge">Recommandé</div>
         <h3>Rapport Complet</h3>
-        <div class="tarif-prix">37 500 <span>CDF</span></div>
+        <div class="tarif-prix">≈ 37 500 <span>CDF</span></div>
         <div class="tarif-delai">⏱ Livraison 72h</div>
         <ul>
-          <li>Tout le pack Graphiques</li>
-          <li>Rapport PDF professionnel</li>
-          <li>Export Excel structuré</li>
+          <li>Tout l'offre 2</li>
+          <li>Rapport PDF structuré</li>
           <li>Rapport Word éditable</li>
+          <li>Export Excel nettoyé</li>
         </ul>
-        <a href="#contact" class="btn-primary">Commencer</a>
+        <button class="btn-details" data-modal="modal3">📖 En savoir plus</button>
+        <a href="https://wa.me/243852591414?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20%22Rapport%20Complet%22%20(environ%2037500%20CDF)." class="btn-primary">Commencer</a>
       </div>
 
+      <!-- Offre 4 -->
       <div class="tarif-card">
-        <h3>Accompagnement</h3>
-        <div class="tarif-prix">125 000 <span>CDF</span></div>
+        <h3>Accompagnement Intégral</h3>
+        <div class="tarif-prix">≈ 125 000 <span>CDF</span></div>
         <div class="tarif-delai">⏱ Selon le projet</div>
         <ul>
-          <li>Collecte des données</li>
-          <li>Tout le pack Rapport Complet</li>
-          <li>Accompagnement soutenance</li>
-          <li>Révisions illimitées</li>
+          <li>Tout l'offre 3</li>
+          <li>Conception formulaire collecte</li>
+          <li>Saisie + nettoyage</li>
+          <li>Accompagnement jusqu'à soutenance</li>
         </ul>
-        <a href="#contact" class="btn-primary">Commencer</a>
+        <button class="btn-details" data-modal="modal4">📖 En savoir plus</button>
+        <a href="https://wa.me/243852591414?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20%22Accompagnement%20Int%C3%A9gral%22%20(environ%20125000%20CDF)." class="btn-primary">Commencer</a>
       </div>
 
     </div>
     <p class="tarif-note">
-      * Les tarifs peuvent être ajustés selon la complexité du projet. 
-      Contactez-nous pour un devis personnalisé.
+      * Paiement 50% à la commande, 50% à la livraison. Mobile Money accepté.
     </p>
   </section>
 
-  <!-- CONTACT -->
+  <!-- =============================
+       POPUPS MODALS
+       ============================= -->
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h4>📊 Analyse Essentielle</h4>
+      <p><strong>Public :</strong> Étudiants qui ont déjà des données propres et veulent juste les résultats statistiques.</p>
+      <p><strong>Livrables détaillés :</strong></p>
+      <ul>
+        <li>Rapport PDF <strong>ET Word éditable</strong> (tableaux faciles à copier)</li>
+        <li>Script Python/SPSS commenté</li>
+        <li>Interprétation écrite des résultats</li>
+      </ul>
+      <p><strong>💳 Paiement :</strong> 50% à la commande, 50% à la livraison.</p>
+      <p><strong>🔒 Confidentialité totale.</strong></p>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h4>📊 Analyse + Graphiques</h4>
+      <p><strong>Public :</strong> Étudiants qui veulent des résultats chiffrés ET des visuels percutants pour leur soutenance.</p>
+      <p><strong>Livrables détaillés :</strong></p>
+      <ul>
+        <li>Tout l'offre Analyse Essentielle</li>
+        <li>Graphiques PNG haute résolution</li>
+        <li><strong>PPTX (PowerPoint)</strong> avec graphiques et légendes prêts à présenter</li>
+      </ul>
+      <p><strong>💳 Paiement :</strong> 50% à la commande, 50% à la livraison.</p>
+      <p><strong>🔒 Confidentialité totale.</strong></p>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h4>📊 Rapport Complet</h4>
+      <p><strong>Public :</strong> Étudiants qui veulent un document "clé en main" à déposer avec leur mémoire.</p>
+      <p><strong>Livrables détaillés :</strong></p>
+      <ul>
+        <li>Tout l'offre Analyse + Graphiques (Word, PDF, PNG, PPTX)</li>
+        <li>Rapport PDF structuré (méthodologie + résultats + interprétation)</li>
+        <li>Rapport Word éditable</li>
+        <li>Export Excel des données nettoyées</li>
+      </ul>
+      <p><strong>💳 Paiement :</strong> 50% à la commande, 50% à la livraison.</p>
+      <p><strong>🔒 Confidentialité totale.</strong></p>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h4>📊 Accompagnement Intégral</h4>
+      <p><strong>Public :</strong> Étudiants qui partent de zéro ou veulent une aide jusqu'à la soutenance.</p>
+      <p><strong>Livrables détaillés :</strong></p>
+      <ul>
+        <li>Tout l'offre Rapport Complet</li>
+        <li>Conception du formulaire de collecte (KoboCollect, Google Forms)</li>
+        <li>Saisie et nettoyage des données brutes</li>
+        <li>Accompagnement WhatsApp illimité</li>
+        <li>Révisions jusqu'à validation</li>
+        <li>Simulation des questions du jury sur les stats</li>
+      </ul>
+      <p><strong>💳 Paiement :</strong> 50% à la commande, 50% à la livraison.</p>
+      <p><strong>🔒 Confidentialité totale.</strong></p>
+    </div>
+  </div>
+
+  <!-- =============================
+       CONTACT
+       ============================= -->
   <section class="section section-alt" id="contact">
     <h2 class="section-title">Contact</h2>
     <p class="section-sub">
@@ -247,17 +362,12 @@
     </p>
     <div class="contact-grid">
 
+      <!-- WhatsApp officiel -->
       <a href="https://wa.me/243852591414" target="_blank" class="contact-card">
         <div class="contact-icon">
-          <!-- WhatsApp SVG officiel -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-            <radialGradient id="wha" cx="11.99" cy="37.95" r="40.48" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#00e676"/>
-              <stop offset=".3" stop-color="#00e676"/>
-              <stop offset="1" stop-color="#00b0ff"/>
-            </radialGradient>
-            <path fill="url(#wha)" d="M24,4C13,4,4,13,4,24c0,3.9,1.1,7.5,3,10.6L4,44l9.7-3c3,1.7,6.4,2.7,10.3,2.7 c11,0,20-9,20-20S35,4,24,4z"/>
-            <path fill="#fff" d="M35.2,28.6c-0.5-0.2-2.8-1.4-3.2-1.5c-0.4-0.2-0.7-0.2-1,0.2c-0.3,0.5-1.2,1.5-1.4,1.8 c-0.3,0.3-0.5,0.4-1,0.1c-0.5-0.2-2-0.7-3.7-2.3c-1.4-1.2-2.3-2.7-2.6-3.2c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.5,0.7-0.8 c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8c-0.1-0.2-1-2.5-1.4-3.4c-0.4-0.9-0.7-0.8-1-0.8c-0.3,0-0.6,0-0.9,0 c-0.3,0-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4c0,2.3,1.7,4.6,2,4.9c0.2,0.3,3.3,5.2,8.1,7.3c1.1,0.5,2,0.8,2.7,1 c1.1,0.3,2.2,0.3,3,0.2c0.9-0.1,2.8-1.1,3.2-2.3c0.4-1.1,0.4-2.1,0.3-2.3C35.9,29,35.6,28.8,35.2,28.6z"/>
+            <path fill="#25D366" d="M24.01 4.07C13.07 4.07 4.07 13.07 4.07 24.01c0 4.02 1.22 7.89 3.48 11.09L4 44.02l9.22-3.25c3.2 2.16 7.01 3.36 10.79 3.36 10.94 0 19.94-9 19.94-19.93 0-10.94-9-19.93-19.94-19.93z"/>
+            <path fill="#FFF" d="M33.5 28.7c-.5-.2-2.9-1.5-3.4-1.6-.4-.2-.8-.2-1.1.2-.3.4-1.2 1.6-1.5 1.9-.3.3-.6.3-1 .1-1.6-.8-3.6-2.2-5-4-1.2-1.4-2-3.1-2.2-3.6-.2-.4 0-.7.2-.9.2-.2.5-.6.7-.8.2-.3.3-.5.4-.9.1-.4 0-.7-.1-.9-.1-.3-.9-2.5-1.3-3.4-.3-.9-.7-.8-1-.8h-.9c-.3 0-.9.1-1.3.7-.5.6-1.8 1.7-1.8 4.1 0 2.4 1.7 4.7 2 5.1.3.4 3.5 5.7 8.5 7.9 1.2.5 2.2.8 3 .9 1.3.2 2.4.1 3.3-.2 1-.3 2.9-1.2 3.3-2.4.4-1.1.4-2.1.3-2.3-.1-.2-.4-.4-.9-.6z"/>
           </svg>
         </div>
         <div class="contact-info">
@@ -267,16 +377,14 @@
         </div>
       </a>
 
+      <!-- Email officiel Gmail -->
       <a href="mailto:aristotelu2005@gmail.com" class="contact-card">
         <div class="contact-icon">
-          <!-- Gmail SVG -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-            <path fill="#EA4335" d="M6,40h6V24L4,18v18C4,37.2,4.9,40,6,40z"/>
-            <path fill="#34A853" d="M36,40h6c1.1,0,2-0.9,2-2V18l-8,6V40z"/>
-            <path fill="#4A90D9" d="M36,10H12L24,19L36,10z"/>
-            <path fill="#FBBC05" d="M4,18l8,6V10L4,18z"/>
-            <path fill="#EA4335" d="M44,18l-8-8v8L44,18z"/>
-            <path fill="#C5221F" d="M12,10l-8,8h8V10z"/>
+            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.2 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.2C12.43 13.72 17.74 9.5 24 9.5z"/>
+            <path fill="#4285F4" d="M46.98 24.55c0-1.56-.16-3.14-.52-4.64H24v8.64h12.96c-.56 2.96-2.26 5.48-4.78 7.18l7.52 5.86c4.02-3.68 6.28-9.07 6.28-15.04z"/>
+            <path fill="#FBBC05" d="M10.54 28.78c-.96-2.88-.96-5.98 0-8.86l-7.98-6.2c-3.44 6.86-3.44 14.86 0 21.72l7.98-6.2z"/>
+            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.52-5.86c-2.12 1.44-4.92 2.27-8.37 2.27-6.26 0-11.57-4.22-13.46-10.02l-7.98 6.2C6.51 42.62 14.62 48 24 48z"/>
           </svg>
         </div>
         <div class="contact-info">
@@ -289,7 +397,44 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- =============================
+       PROCESS (accordéon discret) - PLACÉ AVANT LE FOOTER
+       ============================= -->
+  <section class="process-section" id="process">
+    <div class="process-header">
+      <h3 class="process-title">📋 Comment ça se passe ?</h3>
+      <button id="processToggle" class="process-toggle">▼</button>
+    </div>
+    <div id="processContent" class="process-content hidden-process">
+      <div class="process-steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <div class="step-text">
+            <strong>Vous envoyez vos données</strong>
+            <p>Excel, KoboCollect, formulaire papier scanné, ou même photo d'un questionnaire.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <div class="step-text">
+            <strong>On analyse et on produit</strong>
+            <p>Statistiques, graphiques, rapport Word, PPTX — selon votre offre.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <div class="step-text">
+            <strong>Vous validez et payez le solde</strong>
+            <p>50% à la commande, 50% à la livraison. Paiement par Mobile Money (M-Pesa, Orange Money).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================
+       FOOTER
+       ============================= -->
   <footer class="footer">
     <div class="footer-logo">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="30" height="30">
@@ -300,7 +445,7 @@
       <span>ORGANON</span>
     </div>
     <p>© 2026 Organon Data Solutions — Bukavu, RDC</p>
-    <p class="footer-sub">L'outil qui transforme vos données en décisions.</p>
+    <p class="footer-sub">Votre mémoire, votre travail. Vos données, notre expertise.</p>
   </footer>
 
   <script src="assets/js/main.js"></script>

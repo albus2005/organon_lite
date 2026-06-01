@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#16213E"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CD7F32"/>
+      <stop offset="100%" style="stop-color:#E8A94A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fond principal -->
+  <rect width="900" height="520" rx="12" fill="url(#bg)"/>
+
+  <!-- Bande dorée à gauche -->
+  <rect x="0" y="0" width="18" height="520" fill="url(#gold)"/>
+
+  <!-- Logo Organon (Reliques de la Mort) -->
+  <g transform="translate(70, 260)">
+    <line x1="0" y1="-120" x2="0" y2="50" stroke="#CD7F32" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#CD7F32" stroke-width="5"/>
+    <polygon points="0,-120 95,50 -95,50" fill="none" stroke="#CD7F32" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Nom -->
+  <text x="175" y="130" font-family="Georgia, serif" font-size="36" fill="#FFFFFF" font-weight="bold" letter-spacing="2">Aristote LUBALA</text>
+
+  <!-- Titre -->
+  <text x="175" y="170" font-family="Georgia, serif" font-size="18" fill="#CD7F32" letter-spacing="3">FONDATEUR</text>
+
+  <!-- Organisation -->
+  <text x="175" y="210" font-family="Georgia, serif" font-size="24" fill="#E8E8E8" letter-spacing="4" font-weight="bold">ORGANON</text>
+  <text x="175" y="238" font-family="Georgia, serif" font-size="13" fill="#9CA3AF" letter-spacing="2">DATA SOLUTIONS</text>
+
+  <!-- Ligne séparatrice -->
+  <line x1="175" y1="260" x2="600" y2="260" stroke="#2A2A4A" stroke-width="1"/>
+
+  <!-- Slogan -->
+  <text x="175" y="295" font-family="Georgia, serif" font-size="12" fill="#CD7F32" font-style="italic">Votre mémoire, votre travail. Vos données, notre expertise.</text>
+
+  <!-- Section contact -->
+  <text x="175" y="340" font-family="Georgia, serif" font-size="11" fill="#9CA3AF" letter-spacing="2">CONTACT</text>
+
+  <!-- WhatsApp -->
+  <g transform="translate(175, 360)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18" height="18">
+      <path fill="#25D366" d="M24.01 4.07C13.07 4.07 4.07 13.07 4.07 24.01c0 4.02 1.22 7.89 3.48 11.09L4 44.02l9.22-3.25c3.2 2.16 7.01 3.36 10.79 3.36 10.94 0 19.94-9 19.94-19.93 0-10.94-9-19.93-19.94-19.93z"/>
+      <path fill="#FFF" d="M33.5 28.7c-.5-.2-2.9-1.5-3.4-1.6-.4-.2-.8-.2-1.1.2-.3.4-1.2 1.6-1.5 1.9-.3.3-.6.3-1 .1-1.6-.8-3.6-2.2-5-4-1.2-1.4-2-3.1-2.2-3.6-.2-.4 0-.7.2-.9.2-.2.5-.6.7-.8.2-.3.3-.5.4-.9.1-.4 0-.7-.1-.9-.1-.3-.9-2.5-1.3-3.4-.3-.9-.7-.8-1-.8h-.9c-.3 0-.9.1-1.3.7-.5.6-1.8 1.7-1.8 4.1 0 2.4 1.7 4.7 2 5.1.3.4 3.5 5.7 8.5 7.9 1.2.5 2.2.8 3 .9 1.3.2 2.4.1 3.3-.2 1-.3 2.9-1.2 3.3-2.4.4-1.1.4-2.1.3-2.3-.1-.2-.4-.4-.9-.6z"/>
+    </svg>
+    <text x="28" y="13" font-family="Arial, sans-serif" font-size="12" fill="#E8E8E8">+243 852 591 414</text>
+  </g>
+
+  <!-- Email -->
+  <g transform="translate(175, 395)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18" height="18">
+      <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.2 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.2C12.43 13.72 17.74 9.5 24 9.5z"/>
+      <path fill="#4285F4" d="M46.98 24.55c0-1.56-.16-3.14-.52-4.64H24v8.64h12.96c-.56 2.96-2.26 5.48-4.78 7.18l7.52 5.86c4.02-3.68 6.28-9.07 6.28-15.04z"/>
+      <path fill="#FBBC05" d="M10.54 28.78c-.96-2.88-.96-5.98 0-8.86l-7.98-6.2c-3.44 6.86-3.44 14.86 0 21.72l7.98-6.2z"/>
+      <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.52-5.86c-2.12 1.44-4.92 2.27-8.37 2.27-6.26 0-11.57-4.22-13.46-10.02l-7.98 6.2C6.51 42.62 14.62 48 24 48z"/>
+    </svg>
+    <text x="28" y="13" font-family="Arial, sans-serif" font-size="12" fill="#E8E8E8">aristotelu2005@gmail.com</text>
+  </g>
+
+  <!-- Site web -->
+  <g transform="translate(175, 430)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18" height="18">
+      <path fill="#CD7F32" d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16z"/>
+      <path fill="#CD7F32" d="M24 6c-2.5 0-4.5 8-4.5 18S21.5 42 24 42s4.5-8 4.5-18S26.5 6 24 6z"/>
+      <path fill="#CD7F32" d="M8 24c0 2.5 8 4.5 18 4.5S42 26.5 42 24s-8-4.5-18-4.5S8 21.5 8 24z"/>
+    </svg>
+    <text x="28" y="13" font-family="Arial, sans-serif" font-size="11" fill="#E8E8E8">albus2005.github.io/organon_lite</text>
+  </g>
+
+  <!-- Localisation -->
+  <g transform="translate(175, 465)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18" height="18">
+      <path fill="#CD7F32" d="M24 4C16.8 4 11 9.8 11 17c0 9 11 21 13 23.5 2-2.5 13-14.5 13-23.5 0-7.2-5.8-13-13-13zm0 17.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5 4.5 2 4.5 4.5-2 4.5-4.5 4.5z"/>
+    </svg>
+    <text x="28" y="13" font-family="Arial, sans-serif" font-size="11" fill="#E8E8E8">Bukavu, RDC</text>
+  </g>
+
+  <!-- QR Code (simulé) -->
+  <rect x="710" y="160" width="130" height="130" fill="#FFFFFF" rx="8"/>
+  <rect x="720" y="170" width="110" height="110" fill="#1A1A2E" rx="4"/>
+
+  <!-- Simulacre de QR code (carrés noirs) -->
+  <g fill="#FFFFFF">
+    <rect x="730" y="180" width="20" height="20"/>
+    <rect x="800" y="180" width="20" height="20"/>
+    <rect x="730" y="250" width="20" height="20"/>
+    <rect x="800" y="250" width="20" height="20"/>
+    <rect x="765" y="215" width="15" height="15"/>
+    <rect x="730" y="215" width="10" height="10"/>
+    <rect x="800" y="215" width="10" height="10"/>
+    <rect x="760" y="180" width="8" height="8"/>
+    <rect x="780" y="250" width="8" height="8"/>
+    <rect x="745" y="240" width="6" height="6"/>
+    <rect x="790" y="190" width="6" height="6"/>
+  </g>
+
+  <!-- Texte sous QR code -->
+  <text x="775" y="315" font-family="Arial, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Scannez pour accéder</text>
+  <text x="775" y="328" font-family="Arial, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">au site</text>
+
+  <!-- Bas de carte -->
+  <text x="70" y="495" font-family="Georgia, serif" font-size="9" fill="#4A4A6A" font-style="italic">Organon Data Solutions — Bukavu © 2026</text>
+
+  <!-- Bande dorée en bas à droite -->
+  <rect x="850" y="0" width="50" height="520" fill="url(#gold)" opacity="0.1"/>
+</svg>
